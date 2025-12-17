@@ -9,9 +9,10 @@ const BannerSection = () => {
     <section className="tf__banner">
       <div className="container">
         <div className="row">
+          <img src></img>
           <div className="col-xl-7 col-lg-8">
             <div className="tf__banner_text wow fadeInUp">
-              <h5>Welcome to Eduon!</h5>
+              <h5>Welcome to Vidisha</h5>
               <h1>
                 Students for <span>Little</span> Education from.
               </h1>

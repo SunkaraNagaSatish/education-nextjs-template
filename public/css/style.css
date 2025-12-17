@@ -110,7 +110,7 @@ button {
 }
 
 :root {
-  --colorPrimary: #ff7f46;
+  --colorPrimary: #4582ff;
   --colorBlue: #4582ff;
   --colorGreen: #00d6d3;
   --colorBlack: #0f2239;
@@ -161,7 +161,7 @@ button {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 #faa392;
+    box-shadow: 0 0 0 0 #1568e4;
   }
 }
 
@@ -414,15 +414,21 @@ button {
   -o-transition: all linear 0.3s;
 }
 
+
 .main_menu .navbar-brand {
   margin: 0;
+  margin-left: -100px;
   padding: 0;
-  max-width: 180px;
+  max-width: 400px;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
+}
+
+.navbar-brand>img{
+border-radius: 50px;
 }
 
 .main_menu .navbar-nav {
@@ -507,7 +513,7 @@ button {
 }
 
 .menu_fix .navbar-brand {
-  max-width: 160px;
+  max-width: 400px;
 }
 
 .menu_fix .navbar-nav {
@@ -9894,7 +9900,7 @@ section.tf__counter_3 {
 
   .main_menu_2 .navbar-brand {
     width: 120px;
-    height: 40px;
+    height: 90px;
     display: block;
   }
 

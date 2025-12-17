@@ -14,20 +14,14 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
     >
       <ul className={`navbar-nav ${position}`}>
         <li className="nav-item">
-          <a className="nav-link">
-            Home <i className="fa fa-angle-down"></i>
+          <a className="nav-link">Home
+            {/*<i className="fa fa-angle-down"></i> */}
           </a>
-          <ul className="tf__droap_menu">
+          {/* <ul className="tf__droap_menu">
             <li>
               <SubNavlink href="/">home 1</SubNavlink>
             </li>
-            <li>
-              <SubNavlink href="/home-2">home 2</SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/home-3">home 3</SubNavlink>
-            </li>
-          </ul>
+          </ul> */}
         </li>
         <li className="nav-item">
           <Navlink href="/about">about us</Navlink>
@@ -38,7 +32,7 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
         <li className="nav-item">
           <Navlink href="/blog">blog</Navlink>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a className="nav-link">
             pages <i className="fa fa-angle-down"></i>
           </a>
@@ -85,7 +79,7 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
               <SubNavlink href="/privacy-policy">privacy policy</SubNavlink>
             </li>
           </ul>
-        </li>
+        </li> */}
         <li className="nav-item">
           <Navlink href="/contact">contact</Navlink>
         </li>
