@@ -14,7 +14,7 @@ import VideoSection from "@/component/video/VideoSection";
 import WorkSection from "@/component/work/WorkSection";
 
 export const metadata = {
-  title: "Eduor Home Page 1",
+  title: "Vidisha Junior College",
   description: "Developed by Azizur Rahman",
 };
 

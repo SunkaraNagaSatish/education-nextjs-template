@@ -1,7 +1,41 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const AboutSection = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const accordionData = [
+    {
+      title: "Dual Excellence",
+      content: "Intermediate board preparation integrated with competitive exam coaching (IIT-JEE & NEET)"
+    },
+    {
+      title: "Expert Mentorship",
+      content: "Highly experienced faculty who understand both board patterns and competitive exam requirements"
+    },
+    {
+      title: "Modern Infrastructure",
+      content: "Air-conditioned smart classrooms, digital learning systems, and fully-equipped science laboratories"
+    },
+    {
+      title: "Holistic Development",
+      content: "Focus on academics, discipline, character building, and life skills"
+    },
+    {
+      title: "Complete Support",
+      content: "Academic monitoring, progress reviews, doubt-clearing sessions, and personalized study plans"
+    },
+    {
+      title: "Residential & Day Scholar Options",
+      content: "Hostel facilities with home-like food and transportation for day scholars"
+    }
+  ];
+
   return (
     <section className="tf__about mt_250 xs_mt_195">
       <div className="container">
@@ -19,15 +53,15 @@ const AboutSection = () => {
             <div className="col-xl-7 col-lg-7">
               <div className="tf__about_top_text">
                 <div className="tf__about_top_text_center">
-                  <h4>Study Off Flexibly</h4>
+                  <a href="#" className="common_btn" style={{ marginBottom: '20px', display: 'inline-block' }}>
+                    Explore Courses <i className="fa fa-arrow-right" style={{ marginLeft: '8px' }}></i>
+                  </a>
                   <p>
-                    We can provide you with a reliable handyan in Please input
-                    an email address down below school. Please input anand
-                    school. included the today.
+                    Choose your path to success with our specialized streams: MPC (Mathematics, Physics, Chemistry) integrated with IIT-JEE coaching, or BiPC (Biology, Physics, Chemistry) combined with NEET preparation for aspiring medical professionals.
                   </p>
                 </div>
                 <a href="#" className="common_btn">
-                  read more
+                  Book Campus Visit
                 </a>
               </div>
             </div>
@@ -38,20 +72,33 @@ const AboutSection = () => {
           <div className="col-xl-6 col-md-9 col-lg-6 wow fadeInLeft">
             <div className="tf__about_text">
               <div className="tf__heading_area tf__heading_area_left mb_25">
-                <h5>OUR About Us</h5>
-                <h2>District is Made of about Students Childhood.</h2>
-              </div>
-              <p>
-                Business tailored it design, management & support services
-                business agency elit, sed do eiusmod tempor.{" "}
+                <h5>About Vidisha</h5>
+                <h2 style={{ fontSize: '120%' }}>A Foundation for Dreams, A Pathway to Success</h2>
+              </div><br></br>
+              <p style={{ maxWidth: '90%', lineHeight: '1.8', textAlign: 'justify' }}>
+                Vidisha Junior College stands as Vijayawada's dedicated institution committed to shaping the next generation of engineers, doctors, and leaders. Founded in 2023 with a powerful vision to ensure every household has an engineer and a doctor.
               </p>
-              <ul>
-                <li>Business school's Institut constructivism.</li>
-                <li>We give management school best.</li>
-                <li>Media in this school solution.</li>
-                <li>Business school's Institut constructivism.</li>
-                <li>We give management school best.</li>
-              </ul>
+              <div className="vidisha-accordion">
+                {accordionData.map((item, index) => (
+                  <div
+                    key={index}
+                    className={`accordion-item ${activeIndex === index ? 'active' : ''}`}
+                  >
+                    <div
+                      className="accordion-header"
+                      onClick={() => toggleAccordion(index)}
+                    >
+                      <h4>{item.title}</h4>
+                      <span className="accordion-icon">
+                        {activeIndex === index ? '−' : '+'}
+                      </span>
+                    </div>
+                    <div className="accordion-content">
+                      <p>{item.content}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
               <Link href="/about" className="common_btn">
                 about more
               </Link>

@@ -10,7 +10,7 @@ const TestimonialSection = () => {
           <div className="col-xl-6 col-xxl-5 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_50">
               <h5>OUR Testiomonials</h5>
-              <h2>We have helped create clients say me.</h2>
+              {/* <h2>We have helped create clients say me.</h2> */}
             </div>
           </div>
         </div>

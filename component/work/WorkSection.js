@@ -9,8 +9,8 @@ const WorkSection = () => {
         <div className="row">
           <div className="col-xl-6 col-md-8 col-lg-6 m-auto wow fadeInUp">
             <div className="tf__heading_area mb_35 md_margin">
-              <h5>OUR Working now</h5>
-              <h2>Complete About Students Advance Course.</h2>
+              <h5>OUR WORKING NOW</h5>
+              <h2>Our Academic Approach</h2>
             </div>
           </div>
         </div>

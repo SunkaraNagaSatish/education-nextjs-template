@@ -7,108 +7,171 @@ const FooterSection = () => {
       <div className="tf__footer_overlay pt_75">
         <div className="container">
           <div className="row justify-content-between">
-            <div className="col-xl-3 col-sm-10 col-md-7 col-lg-6">
+            {/* Column 1: About Vidisha */}
+            <div className="col-xl col-lg-6 col-md-6 col-sm-12">
               <div className="tf__footer_logo_area">
+                {/* <h3>About Vidisha</h3> */}
                 <Link className="footer_logo" href="/">
                   <img
                     src="/images/footer_logo.png"
-                    alt="Eduor"
+                    alt="Vidisha Junior College"
                     className="img-fluid w-100"
                   />
                 </Link>
-                <p>
-                  Nemo enim ipsam voluptate quia voluptas sit aspernatur aut
-                  odit aut fugit, sed quia magni this dolores eos qui ratione .
+                <p className="mt-3">
+                  Empowering tomorrow's engineers and doctors through excellence in intermediate education and integrated competitive exam coaching.
                 </p>
-                <ul className="d-flex flex-wrap">
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-pinterest-p"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i className="fab fa-google-plus-g"></i>
-                    </a>
-                  </li>
-                </ul>
+                <p className="footer-info">
+                  <strong>Founded:</strong> 2023<br />
+                  <strong>Location:</strong> Vijayawada, Andhra Pradesh
+                </p>
+                <p className="footer-tagline">
+                  <em>"Every house an engineer and a doctor"</em>
+                </p>
               </div>
             </div>
-            <div className="col-xl-2 col-sm-10 col-md-5 col-lg-5">
+
+            {/* Column 2: Quick Links */}
+            <div className="col-xl col-lg-6 col-md-6 col-sm-12">
               <div className="tf__footer_content xs_mt_50">
                 <h3>Quick Links</h3>
                 <ul>
                   <li>
-                    <Link href="/courses">Best Services</Link>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <Link href="/events">Events</Link>
+                    <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link href="/about">About Our Company</Link>
+                    <Link href="/courses">Courses</Link>
                   </li>
                   <li>
-                    <Link href="/contact">Business Contact</Link>
+                    <Link href="/contact">Admissions</Link>
                   </li>
                   <li>
-                    <Link href="/contact">Make An Appointment</Link>
+                    <Link href="/about">Facilities</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Contact Us</Link>
+                  </li>
+                  <li>
+                    <Link href="/about">Campus Tour</Link>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-xl-3 col-sm-10 col-md-7 col-lg-col-lg-6">
-              <div className="tf__footer_content xs_mt_30">
-                <h3>Our Contacts</h3>
-                <p>Adress: 27 Division St, Berakuti, NY 121102, USA</p>
-                <p>
-                  <span> Phone: +8 1440 456 782</span>
-                  <span>Fax: +8 846512 456 788</span>
+
+            {/* Column 3: Our Courses */}
+            <div className="col-xl col-lg-6 col-md-6 col-sm-12">
+              <div className="tf__footer_content xs_mt_50">
+                <h3>Our Courses</h3>
+                <p className="course-category"><strong>MPC Stream:</strong></p>
+                <ul>
+                  <li>
+                    <Link href="/courses">1st Year with JEE Mains</Link>
+                  </li>
+                  <li>
+                    <Link href="/courses">1st Year with JEE Mains & Advanced</Link>
+                  </li>
+                  <li>
+                    <Link href="/courses">2nd Year with JEE Mains</Link>
+                  </li>
+                  <li>
+                    <Link href="/courses">2nd Year with JEE Mains & Advanced</Link>
+                  </li>
+                </ul>
+                <p className="course-category mt-3"><strong>BiPC Stream:</strong></p>
+                <ul>
+                  <li>
+                    <Link href="/courses">1st Year with NEET</Link>
+                  </li>
+                  <li>
+                    <Link href="/courses">2nd Year with NEET</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Column 4: Contact Info */}
+            <div className="col-xl col-lg-6 col-md-6 col-sm-12">
+              <div className="tf__footer_content xs_mt_50">
+                <h3>Contact Info</h3>
+                <p className="contact-item">
+                  <strong>Address:</strong><br />
+                  [Full Address]<br />
+                  Vijayawada, Andhra Pradesh
                 </p>
-                <p>
-                  <span>Email: example@mail.com </span>
-                  <span>Website: yourwebsite.com</span>
+                <p className="contact-item">
+                  <strong>Phone:</strong><br />
+                  [Phone Number]
+                </p>
+                <p className="contact-item">
+                  <strong>Email:</strong><br />
+                  [Email Address]
+                </p>
+                <p className="contact-item">
+                  <strong>Business Hours:</strong><br />
+                  Mon-Sat: 9 AM - 6 PM
                 </p>
               </div>
             </div>
-            <div className="col-xl-3 col-sm-10 col-md-5 col-lg-4 col-lg-5">
-              <div className="tf__footer_content xs_mt_45">
-                <h3>News Letter</h3>
-                <p>
-                  Our approach to itis unique around know work an we know Get
-                  hands on the you like
-                </p>
-                <form>
-                  <input type="text" placeholder="Your Email" />
-                  <button>send</button>
-                </form>
+
+            {/* Column 5: Important Links */}
+            <div className="col-xl col-lg-6 col-md-6 col-sm-12">
+              <div className="tf__footer_content xs_mt_50">
+                <h3>Important Links</h3>
+                <ul>
+                  <li>
+                    <Link href="/about">Hostel Facilities</Link>
+                  </li>
+                  <li>
+                    <Link href="/about">Transportation</Link>
+                  </li>
+                  <li>
+                    <Link href="/courses">Fee Structure</Link>
+                  </li>
+                  <li>
+                    <Link href="/team">Faculty</Link>
+                  </li>
+                  <li>
+                    <Link href="/achievements">Results & Achievements</Link>
+                  </li>
+                  <li>
+                    <Link href="/privacy-policy">Privacy Policy</Link>
+                  </li>
+                  <li>
+                    <Link href="/terms">Terms & Conditions</Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+
+          {/* Bottom Footer */}
           <div className="row">
             <div className="col-12">
               <div className="tf__copyright">
-                <p>Copyright ©Eduor all rights reserved.</p>
-                <ul className="d-flex flex-wrap">
+                <p>© 2025 Vidisha Junior College. All Rights Reserved.</p>
+                <ul className="d-flex flex-wrap align-items-center">
                   <li>
-                    <Link href="/privacy-policy">Privacy policy</Link>
+                    <a href="#" aria-label="Facebook">
+                      <i className="fab fa-facebook-f"></i>
+                    </a>
                   </li>
                   <li>
-                    <Link href="/about">About</Link>
+                    <a href="#" aria-label="Instagram">
+                      <i className="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="YouTube">
+                      <i className="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="LinkedIn">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
                   </li>
                 </ul>
               </div>

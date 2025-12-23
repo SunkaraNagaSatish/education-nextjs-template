@@ -33,7 +33,7 @@ const FooterSection2 = ({ style, logo }) => {
                 <div className="col-xl-3 col-md-7 col-lg-3">
                   <div className="tf__footer_logo_area">
                     <Link className="footer_logo" href="/">
-                      <img src={logo} alt="Eduor" className="img-fluid w-100" />
+                      <img src={logo} alt="Vidisha" className="img-fluid w-100" />
                     </Link>
                     <p>
                       Nemo enim ipsam voluptate quia voluptas sit aspernatur aut

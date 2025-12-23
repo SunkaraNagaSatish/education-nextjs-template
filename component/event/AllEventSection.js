@@ -16,8 +16,8 @@ const AllEventSection = () => {
         <div className="row wow fadeInUp">
           <div className="col-xl-6 col-md-8 col-lg-6 m-auto">
             <div className="tf__heading_area mb_15">
-              <h5>OUR Upcoming Events</h5>
-              <h2>Complete About Students Advance Course.</h2>
+              <h5>Important Dates & Updates</h5>
+              <h2>Stay Informed About Key Events & Opportunities</h2>
             </div>
           </div>
         </div>
@@ -50,7 +50,6 @@ const AllEventSection = () => {
                   <p>{item.desc}</p>
                   <div className="tf__single_event_footer">
                     <span>{item.name}</span>
-                    <span>${item.price}</span>
                   </div>
                 </div>
               </div>
@@ -64,9 +63,8 @@ const AllEventSection = () => {
                 <ul className="pagination">
                   <li className="page-item">
                     <a
-                      className={`page-link ${
-                        currentEventPage === 1 ? "disabled" : ""
-                      }`}
+                      className={`page-link ${currentEventPage === 1 ? "disabled" : ""
+                        }`}
                       aria-label="Previous"
                       onClick={() =>
                         handleEventPageChange(currentEventPage - 1)
@@ -78,9 +76,8 @@ const AllEventSection = () => {
                   {Array.from({ length: totalEventPages }, (_, index) => (
                     <li className="page-item" key={index}>
                       <a
-                        className={`page-link ${
-                          currentEventPage === index + 1 ? "active" : ""
-                        }`}
+                        className={`page-link ${currentEventPage === index + 1 ? "active" : ""
+                          }`}
                         onClick={() => handleEventPageChange(index + 1)}
                       >
                         {index + 1}
@@ -89,9 +86,8 @@ const AllEventSection = () => {
                   ))}
                   <li className="page-item">
                     <a
-                      className={`page-link ${
-                        currentEventPage === totalEventPages ? "disabled" : ""
-                      }`}
+                      className={`page-link ${currentEventPage === totalEventPages ? "disabled" : ""
+                        }`}
                       aria-label="Next"
                       onClick={() =>
                         handleEventPageChange(currentEventPage + 1)

@@ -1,0 +1,41 @@
+/* Additional CSS for perfect alignment across all zoom levels */
+
+/* Event Slider Equal Heights */
+.event_slider .slick-slide {
+    height: auto;
+}
+
+.event_slider .slick-slide>div {
+    height: 100%;
+}
+
+.event_slider .col-xl-4 {
+    display: flex;
+    height: 100%;
+}
+
+/* Work Slider Equal Heights */
+.work_slider .slick-slide {
+    height: auto;
+}
+
+.work_slider .slick-slide>div {
+    height: 100%;
+}
+
+.work_slider .col-xl-4 {
+    display: flex;
+    height: 100%;
+}
+
+/* Ensure slick track maintains proper height */
+.event_slider .slick-track,
+.work_slider .slick-track {
+    display: flex !important;
+}
+
+.event_slider .slick-track .slick-slide,
+.work_slider .slick-track .slick-slide {
+    height: auto;
+    display: flex;
+}

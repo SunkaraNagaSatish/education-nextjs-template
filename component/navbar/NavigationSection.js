@@ -23,7 +23,7 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
           <Navlink href="/courses">courses</Navlink>
         </li>
         <li className="nav-item">
-          <Navlink href="/blog">blog</Navlink>
+          <Navlink href="/achievements">achievements</Navlink>
         </li>
         {/* <li className="nav-item">
           <a className="nav-link">

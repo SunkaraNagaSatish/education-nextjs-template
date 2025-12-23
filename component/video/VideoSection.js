@@ -6,7 +6,7 @@ const VideoSection = () => {
   const { handleVideoShow } = useEduorContext();
   return (
     <section className="tf__video mt_100">
-      <div className="tf__video_overlay pt_100 pb_100">
+      {/* <div className="tf__video_overlay pt_100 pb_100">
         <div className="container">
           <div className="row">
             <div className="col-xl-6 m-auto wow fadeInUp">
@@ -30,7 +30,7 @@ const VideoSection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

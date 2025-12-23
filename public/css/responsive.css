@@ -71,6 +71,7 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1399.99px) {
+
   /*==================================
         HOME PAGE START
     ==================================*/
@@ -438,6 +439,7 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199.99px) {
+
   /*==================================
         HOME PAGE START
     ==================================*/
@@ -942,6 +944,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991.99px) {
+
   /*==================================
         HOME PAGE START
     ==================================*/
@@ -950,9 +953,11 @@
     height: 70px;
     background: var(--colorWhite);
   }
+
   .video-modal-iframe {
     height: 300px;
   }
+
   .main_menu .container {
     padding: 14px 0;
   }
@@ -1736,6 +1741,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 767.99px) {
+
   /*==================================
         HOME PAGE START
     ==================================*/
@@ -1744,9 +1750,11 @@
     height: 70px;
     background: var(--colorWhite);
   }
+
   .tf__footer_logo_area {
     margin-bottom: 15px;
   }
+
   .main_menu .container {
     padding: 14px 0;
   }
@@ -1838,7 +1846,7 @@
 
   .tf__banner {
     height: auto;
-    padding: 170px 0px 100px 0px;
+    padding: 260px 0px 100px 0px;
     background-position: center left !important;
   }
 
@@ -2335,7 +2343,7 @@
   /*==================================
         TEAM HOME PAGE 2 START
     ==================================*/
-  .tf__topbar_right > ul {
+  .tf__topbar_right>ul {
     justify-content: center;
   }
 
@@ -2551,9 +2559,11 @@
     font-size: 25px;
     color: var(--colorWhite);
   }
+
   .video-modal-iframe {
     height: 300px;
   }
+
   .tf__contact_3_text {
     margin-bottom: 25px;
   }
@@ -2581,6 +2591,7 @@
 }
 
 @media (max-width: 575.99px) {
+
   /*==================================
         HOME PAGE START
     ==================================*/
@@ -2589,15 +2600,19 @@
     height: 90px;
     background: var(--colorWhite);
   }
+
   section .container {
     padding: 0 20px;
   }
+
   .tf__banner {
     height: 750px;
   }
+
   .tf__footer_overlay .container {
     padding: 0 20px;
   }
+
   .main_menu .container {
     padding: 20px;
   }
@@ -2610,17 +2625,21 @@
     margin-top: 11px;
     padding-top: 5px;
   }
+
   .video-modal-iframe {
     height: 300px;
   }
+
   .main_menu .navbar-nav .nav-item .common_btn {
     margin-bottom: 25px;
     margin-top: 10px;
   }
+
   .tf__about_img::after,
   .tf__about_img::before {
     display: none;
   }
+
   .main_menu .navbar-nav .nav-item {
     margin-right: 0;
   }
@@ -2658,9 +2677,11 @@
   .navbar-brand {
     max-width: 160px !important;
   }
+
   .tf__footer_logo_area {
     margin-bottom: 25px;
   }
+
   .navbar-toggler {
     width: 40px;
     height: 40px;
@@ -2700,7 +2721,7 @@
 
   .tf__banner {
     height: auto;
-    padding: 170px 0px 100px 0px;
+    padding: 260px 0px 100px 0px;
     background-position: center left !important;
   }
 
@@ -2737,12 +2758,15 @@
     padding-left: 40px;
     max-width: 90%;
   }
+
   .mt_195 {
     margin-top: 100px;
   }
+
   .mt_190 {
     margin-top: 100px;
   }
+
   .tf__single_category_text h3 {
     font-size: 20px;
   }
@@ -3088,9 +3112,11 @@
   .tf__single_courses_img {
     height: 220px;
   }
+
   .tf__about_us_page.mt_195.xs_mt_100 {
     margin-top: 100px;
   }
+
   /*==================================
         ABOUT PAGE END
     ==================================*/
@@ -3258,9 +3284,11 @@
     margin-top: 15px;
     border: none;
   }
+
   .tf__courses_details_header.d-flex.flex-wrap.align-items-center {
     justify-content: center;
   }
+
   .tf__courses_details_header {
     padding: 30px;
   }
@@ -3423,7 +3451,7 @@
   /*==================================
         HOME PAGE 2 START
     ==================================*/
-  .tf__topbar_right > ul {
+  .tf__topbar_right>ul {
     justify-content: center;
   }
 
@@ -3690,29 +3718,95 @@
     margin-bottom: -25px;
   }
 }
+
 @media (max-width: 400px) {
   .tf__single_category_text {
     max-width: 85%;
   }
+
   .tf__breadcrumb .container::after {
     top: 105px;
   }
+
   .tf__courses_det_text .nav .nav-item a {
     margin-right: 20px;
   }
+
   .tf__banner {
-    padding: 130px 0 90px;
+    padding: 220px 0 90px;
   }
+
   .tf__banner_text h5 {
     font-size: 15px;
   }
+
   .tf__banner_text h1 {
     font-size: 50px;
   }
+
   .tf__banner_text p {
     font-size: 15px;
   }
+
   .tf__heading_area h2 {
     font-size: 30px;
+  }
+}
+
+/* Footer Responsive Styles */
+@media (max-width: 991.99px) {
+  .tf__footer .row.justify-content-between>div {
+    margin-bottom: 40px;
+  }
+
+  .tf__footer .row.justify-content-between>div:last-child {
+    margin-bottom: 0;
+  }
+
+  .tf__footer_content.xs_mt_50 {
+    margin-top: 40px !important;
+  }
+
+  .tf__copyright {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .tf__copyright ul {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .tf__footer_logo_area h3,
+  .tf__footer_content h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .tf__footer_logo_area p,
+  .tf__footer_content p {
+    font-size: 15px;
+  }
+
+  .tf__footer_content ul li a {
+    font-size: 15px;
+  }
+
+  .tf__copyright {
+    padding: 20px 0px;
+    margin-top: 30px;
+  }
+
+  .tf__copyright p {
+    font-size: 14px;
+  }
+
+  .tf__copyright ul li a {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
   }
 }
