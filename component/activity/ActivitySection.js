@@ -7,7 +7,7 @@ const ActivitySection = () => {
         <div className="row">
           <div className="col-xl-6 col-lg-6 wow fadeInLeft">
             <div className="tf__heading_area tf__heading_area_left mb_20">
-              <h5>OUR Best ACTIVITIES</h5>
+              <h5>ACTIVITIES</h5>
               <h2>Student Support Services</h2>
             </div>
             <div className="tf__activities_text">

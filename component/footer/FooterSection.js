@@ -26,7 +26,7 @@ const FooterSection = () => {
                   <strong>Location:</strong> Vijayawada, Andhra Pradesh
                 </p>
                 <p className="footer-tagline">
-                  <em>"Every house an engineer and a doctor"</em>
+                  <em>"Every house should have an engineer or a doctor"</em>
                 </p>
               </div>
             </div>
@@ -96,14 +96,14 @@ const FooterSection = () => {
             <div className="col-xl col-lg-6 col-md-6 col-sm-12">
               <div className="tf__footer_content xs_mt_50">
                 <h3>Contact Info</h3>
-                <p className="contact-item">
+                {/* <p className="contact-item">
                   <strong>Address:</strong><br />
-                  [Full Address]<br />
-                  Vijayawada, Andhra Pradesh
-                </p>
+                  Chaganti Mercantile, Near Nirmala Convent Signal, Benz Circle, <br />
+                  Vijayawada, Andhra Pradesh 520010
+                </p> */}
                 <p className="contact-item">
                   <strong>Phone:</strong><br />
-                  [Phone Number]
+                  9121147747 | 6366527168
                 </p>
                 <p className="contact-item">
                   <strong>Email:</strong><br />

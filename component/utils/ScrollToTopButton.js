@@ -5,34 +5,33 @@ const ScrollToTopButton = ({ style }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Add a scroll event listener when the component mounts
-    window.addEventListener("scroll", handleScroll);
+    let ticking = false;
 
-    // Remove the scroll event listener when the component unmounts
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrolling = window.scrollY;
+          setIsVisible(scrolling > 300);
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  const handleScroll = () => {
-    // Get the current scroll position
-    const scrolling = window.scrollY;
-
-    // Show the button when scrolling down beyond a certain point (e.g., 300 pixels)
-    if (scrolling > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
   const scrollToTop = () => {
-    // Smoothly scroll to the top of the page
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
+
   return (
     <div>
       {isVisible && (

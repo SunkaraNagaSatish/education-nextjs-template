@@ -1,5 +1,6 @@
 "use client";
 import { services } from "@/data/Data";
+import Link from "next/link";
 import React from "react";
 import Slider from "react-slick";
 
@@ -47,16 +48,18 @@ const ServiceSlider = () => {
     >
       {services.map((item) => (
         <div className="col-xl-3" key={item.id}>
-          <div className={`tf__popular_service_single ${item.color}`}>
-            <span>
-              <i className={item.iClassName}></i>
-            </span>
-            <h3>{item.title}</h3>
-            <p>{item.desc}</p>
-            <a href="#">
-              <i className="fas fa-long-arrow-right"></i>
-            </a>
-          </div>
+          <Link href={`/services/${item.slug}`} style={{ textDecoration: 'none' }}>
+            <div className={`tf__popular_service_single ${item.color}`} style={{ cursor: 'pointer' }}>
+              <span>
+                <i className={item.iClassName}></i>
+              </span>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+              <div style={{ display: 'inline-block' }}>
+                <i className="fas fa-long-arrow-right"></i>
+              </div>
+            </div>
+          </Link>
         </div>
       ))}
     </Slider>

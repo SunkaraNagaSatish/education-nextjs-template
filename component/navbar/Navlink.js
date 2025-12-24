@@ -2,15 +2,15 @@
 import React from "react";
 import Link from "next/link";
 import { useEduorContext } from "@/context/EduorContext";
-import { usePathname } from "next/navigation"; // Import usePathname
+import { usePathname } from "next/navigation";
 
 const Navlink = ({ href, children }) => {
   const { isMobileNavOpen, setIsMobileNavOpen } = useEduorContext();
-  const pathname = usePathname(); // Get the current URL pathname
+  const pathname = usePathname();
 
   const isActive = pathname === href;
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e) => {
     if (isMobileNavOpen) {
       setIsMobileNavOpen(false);
     }
@@ -21,6 +21,7 @@ const Navlink = ({ href, children }) => {
       href={href}
       className={`nav-link ${isActive ? "active" : ""}`}
       onClick={handleLinkClick}
+      prefetch={true}
     >
       {children}
     </Link>

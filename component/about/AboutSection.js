@@ -52,10 +52,7 @@ const AboutSection = () => {
             </div>
             <div className="col-xl-7 col-lg-7">
               <div className="tf__about_top_text">
-                <div className="tf__about_top_text_center">
-                  <a href="#" className="common_btn" style={{ marginBottom: '20px', display: 'inline-block' }}>
-                    Explore Courses <i className="fa fa-arrow-right" style={{ marginLeft: '8px' }}></i>
-                  </a>
+                <div className="tf__about_top_text_center">               
                   <p>
                     Choose your path to success with our specialized streams: MPC (Mathematics, Physics, Chemistry) integrated with IIT-JEE coaching, or BiPC (Biology, Physics, Chemistry) combined with NEET preparation for aspiring medical professionals.
                   </p>
@@ -99,9 +96,7 @@ const AboutSection = () => {
                   </div>
                 ))}
               </div>
-              <Link href="/about" className="common_btn">
-                about more
-              </Link>
+              
             </div>
           </div>
           <div className="col-xl-6 col-sm-9 col-md-8 col-lg-6 wow fadeInRight">
@@ -113,8 +108,8 @@ const AboutSection = () => {
               />
               <div className="text">
                 <i className="far fa-check-circle"></i>
-                <h3>183k+</h3>
-                <p>Complete Projects</p>
+                <h3>5200+</h3>
+                <p>Students</p>
               </div>
             </div>
           </div>

@@ -50,7 +50,7 @@ const ContactForm = () => {
         </div>
         <div className="col-xl-12">
           <textarea
-            rows={8}
+            rows={11}
             placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}

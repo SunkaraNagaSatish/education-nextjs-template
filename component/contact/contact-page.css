@@ -1,0 +1,702 @@
+/* Contact Page Styles */
+
+.mb_50 {
+    margin-bottom: 50px;
+}
+
+.mt_60 {
+    margin-top: 60px;
+}
+
+.contact-form-wrapper {
+    background: white;
+    background-image: url('/images/contact_form_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 40px;
+    border-radius: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 0px;
+    z-index: 0;
+}
+
+.contact-form-wrapper form {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+    background: rgba(255, 255, 255, 0.25) !important;
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
+    color: #000000 !important;
+    font-weight: 700 !important;
+    font-size: 17px !important;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    margin-bottom: 20px !important;
+    border-radius: 0px !important;
+}
+
+.contact-form-wrapper textarea {
+    margin-bottom: 25px !important;
+    min-height: calc(11 * 1.5em + 60px) !important;
+}
+
+.contact-form-wrapper input::placeholder,
+.contact-form-wrapper textarea::placeholder {
+    color: #333 !important;
+    opacity: 1;
+    font-weight: 600 !important;
+}
+
+.contact-form-wrapper input:focus,
+.contact-form-wrapper textarea:focus {
+    background: rgba(255, 255, 255, 0.5) !important;
+    border-color: rgba(33, 150, 243, 0.6) !important;
+    outline: none;
+}
+
+.contact-form-wrapper:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+}
+
+.contact-subtitle {
+    color: #666;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt_80 {
+    margin-top: 60px;
+}
+
+/* Contact Info Wrapper - Right Side */
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+    min-height: 550px;
+}
+
+.contact-info-item {
+    background: white;
+    background-image: url('/images/call_us_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    border-radius: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.contact-info-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 0px;
+    z-index: 0;
+}
+
+.contact-info-item .info-icon,
+.contact-info-item .info-content {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-info-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transform: translateX(5px);
+    border-color: #e0e0e0;
+}
+
+.info-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background: #2196F3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.info-icon i {
+    font-size: 26px;
+    color: white;
+}
+
+.info-content {
+    flex: 1;
+}
+
+.info-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.info-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-category {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.5px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.info-link {
+    display: block;
+    font-size: 19px;
+    font-weight: 700;
+    color: #1976D2;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    padding: 8px 0;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.info-link:hover {
+    color: #1976D2;
+    transform: translateX(5px);
+    text-decoration: underline;
+}
+
+.email-link {
+    word-break: break-word;
+    font-size: 16px;
+}
+
+.info-text {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin: 0;
+}
+
+/* Addresses Section - Horizontal Grid Below */
+.addresses-section {
+    background: white;
+    background-image: url('/images/visit_us_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+    border-radius: 0px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e0e0e0;
+    position: relative;
+    overflow: hidden;
+}
+
+.addresses-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 0px;
+    z-index: 0;
+}
+
+.addresses-heading,
+.addresses-grid {
+    position: relative;
+    z-index: 1;
+}
+
+.addresses-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.addresses-heading-icon {
+    width: 50px;
+    height: 50px;
+    background: #2196F3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.addresses-heading-icon i {
+    font-size: 22px;
+    color: white;
+}
+
+.addresses-heading h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.addresses-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.address-card {
+    background: rgba(255, 255, 255, 0.25) !important;
+    padding: 25px;
+    border-radius: 0px;
+    border: 2px solid rgba(255, 255, 255, 0.8) !important;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    min-height: 180px;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.address-card:hover {
+    background: rgba(255, 255, 255, 0.4) !important;
+    border-color: rgba(33, 150, 243, 0.6) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.address-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.address-card-header i {
+    font-size: 16px;
+    color: #2196F3;
+}
+
+.address-card-header h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1976D2;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.address-card-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #000000;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    flex: 1;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.address-card-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2196F3;
+    text-decoration: none;
+    padding: 6px 12px;
+    background: white;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.address-card-phone:hover {
+    background: #2196F3;
+    color: white;
+    transform: translateX(3px);
+}
+
+.address-card-phone i {
+    font-size: 10px;
+}
+
+/* Addresses Container Styles */
+.addresses-scroll {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.addresses-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.addresses-scroll::-webkit-scrollbar-track {
+    background: #E3F2FD;
+    border-radius: 10px;
+}
+
+.addresses-scroll::-webkit-scrollbar-thumb {
+    background: #2196F3;
+    border-radius: 10px;
+}
+
+.addresses-scroll::-webkit-scrollbar-thumb:hover {
+    background: #1976D2;
+}
+
+.address-item {
+    background: #F5F9FF;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border-left: 3px solid #2196F3;
+    transition: all 0.3s ease;
+}
+
+.address-item:last-child {
+    margin-bottom: 0;
+}
+
+.address-item:hover {
+    background: #EBF5FF;
+    border-left-color: #1976D2;
+    transform: translateX(3px);
+}
+
+.address-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.address-header i {
+    font-size: 14px;
+    color: #2196F3;
+}
+
+.address-header h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1976D2;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.address-details {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 0 8px 0;
+    padding-left: 22px;
+}
+
+.branch-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #2196F3;
+    text-decoration: none;
+    margin-left: 22px;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.branch-phone:hover {
+    background: #2196F3;
+    color: white;
+    transform: translateX(3px);
+}
+
+.branch-phone i {
+    font-size: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1199px) {
+    .addresses-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-info-wrapper {
+        margin-top: 30px;
+    }
+
+    .contact-info-item {
+        padding: 25px;
+    }
+
+    .info-icon {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+    }
+
+    .info-icon i {
+        font-size: 24px;
+    }
+
+    .info-title {
+        font-size: 18px;
+    }
+
+    .addresses-section {
+        padding: 35px;
+    }
+
+    .addresses-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .address-card {
+        padding: 20px;
+        min-height: 160px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-form-wrapper {
+        padding: 40px 25px;
+    }
+
+    .mt_80 {
+        margin-top: 50px;
+    }
+
+    .mt_60 {
+        margin-top: 40px;
+    }
+
+    .contact-info-wrapper {
+        margin-top: 25px;
+        gap: 20px;
+    }
+
+    .contact-info-item {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+    }
+
+    .info-icon i {
+        font-size: 22px;
+    }
+
+    .info-title {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .info-details {
+        width: 100%;
+    }
+
+    .addresses-section {
+        padding: 30px 20px;
+    }
+
+    .addresses-heading {
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .addresses-heading-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .addresses-heading-icon i {
+        font-size: 20px;
+    }
+
+    .addresses-heading h3 {
+        font-size: 20px;
+    }
+
+    .addresses-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .address-card {
+        padding: 18px;
+        min-height: auto;
+    }
+
+    .address-card-header h4 {
+        font-size: 14px;
+    }
+
+    .address-card-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-form-wrapper {
+        padding: 30px 20px;
+    }
+
+    .contact-subtitle {
+        font-size: 14px;
+    }
+
+    .mb_50 {
+        margin-bottom: 35px;
+    }
+
+    .contact-info-wrapper {
+        gap: 18px;
+    }
+
+    .contact-info-item {
+        padding: 18px;
+    }
+
+    .info-icon {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+    }
+
+    .info-icon i {
+        font-size: 20px;
+    }
+
+    .info-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .info-link {
+        font-size: 14px;
+    }
+
+    .addresses-section {
+        padding: 25px 15px;
+    }
+
+    .addresses-heading {
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .addresses-heading-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .addresses-heading-icon i {
+        font-size: 18px;
+    }
+
+    .addresses-heading h3 {
+        font-size: 18px;
+    }
+
+    .addresses-grid {
+        gap: 12px;
+    }
+
+    .address-card {
+        padding: 15px;
+    }
+
+    .address-card-header {
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .address-card-header i {
+        font-size: 14px;
+    }
+
+    .address-card-header h4 {
+        font-size: 13px;
+    }
+
+    .address-card-text {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .address-card-phone {
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+}

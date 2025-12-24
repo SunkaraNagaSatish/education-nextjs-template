@@ -2119,6 +2119,7 @@
 
   .tf__popular_service_single {
     padding: 30px 20px;
+    min-height: 320px;
   }
 
   /*==================================
@@ -2760,11 +2761,11 @@
   }
 
   .mt_195 {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   .mt_190 {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   .tf__single_category_text h3 {
@@ -3114,7 +3115,7 @@
   }
 
   .tf__about_us_page.mt_195.xs_mt_100 {
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   /*==================================

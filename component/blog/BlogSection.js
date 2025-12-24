@@ -9,7 +9,7 @@ const BlogSection = () => {
         <div className="row">
           <div className="col-xl-6 col-lg-6 m-auto wow fadeInUp">
             <div className="tf__heading_area mb_15">
-              <h5>LATEST UPDATES & RESOURCES</h5>
+              <h5>Choose Your Path</h5>
               <h2>Latest Updates & Resources</h2>
             </div>
           </div>

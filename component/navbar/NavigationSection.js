@@ -78,9 +78,9 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
         </li>
         {btnPosition ? null : (
           <li className="nav-item">
-            <a className="nav-link common_btn" href="#">
+            {/* <a className="nav-link common_btn" href="#">
               LEARN MORE
-            </a>
+            </a> */}
           </li>
         )}
       </ul>

@@ -1,6 +1,6 @@
 "use client";
 import { blogData, courseDataArray, eventData, teamData } from "@/data/Data";
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState, useCallback } from "react";
 
 const EduorContext = createContext();
 
@@ -9,21 +9,29 @@ export const EduorProvider = ({ children }) => {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      if (window.scrollY >= 50) {
-        setIsHeaderFixed(true);
-      } else {
-        setIsHeaderFixed(false);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (window.scrollY >= 50) {
+            setIsHeaderFixed(true);
+          } else {
+            setIsHeaderFixed(false);
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
-      // Clean up the event listener when the component is unmounted
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   // Video Modal
   const [showVideo, setShowVideo] = useState(false);
 
@@ -49,14 +57,12 @@ export const EduorProvider = ({ children }) => {
 
   const totalBlogPages = Math.ceil(blogData.length / blogPerPage);
 
-  const handleBlogPageChange = (newPage) => {
+  const handleBlogPageChange = useCallback((newPage) => {
     setCurrentBlogPage(newPage);
-    setTimeout(() => {
-      window.scrollTo(0, 200);
-    }, 500);
-  };
+    window.scrollTo({ top: 200, behavior: 'instant' });
+  }, []);
 
-  //   Blog Section
+  //   Course Section
   const coursePerPage = 6;
 
   const [currentCoursePage, setCurrentCoursePage] = useState(1);
@@ -70,12 +76,10 @@ export const EduorProvider = ({ children }) => {
 
   const totalCoursePages = Math.ceil(courseDataArray.length / coursePerPage);
 
-  const handleCoursePageChange = (newPage) => {
+  const handleCoursePageChange = useCallback((newPage) => {
     setCurrentCoursePage(newPage);
-    setTimeout(() => {
-      window.scrollTo(0, 200);
-    }, 500);
-  };
+    window.scrollTo({ top: 200, behavior: 'instant' });
+  }, []);
 
   //   Event Section
   const eventPerPage = 6;
@@ -88,12 +92,10 @@ export const EduorProvider = ({ children }) => {
 
   const totalEventPages = Math.ceil(eventData.length / eventPerPage);
 
-  const handleEventPageChange = (newPage) => {
+  const handleEventPageChange = useCallback((newPage) => {
     setCurrentEventPage(newPage);
-    setTimeout(() => {
-      window.scrollTo(0, 200);
-    }, 500);
-  };
+    window.scrollTo({ top: 200, behavior: 'instant' });
+  }, []);
 
   //   Team Section
   const teamPerPage = 6;
@@ -106,12 +108,10 @@ export const EduorProvider = ({ children }) => {
 
   const totalTeamPages = Math.ceil(teamData.length / teamPerPage);
 
-  const handleTeamPageChange = (newPage) => {
+  const handleTeamPageChange = useCallback((newPage) => {
     setCurrentTeamPage(newPage);
-    setTimeout(() => {
-      window.scrollTo(0, 200);
-    }, 500);
-  };
+    window.scrollTo({ top: 200, behavior: 'instant' });
+  }, []);
 
   // Email validation Regex
   const isValidEmail = (email) => {
