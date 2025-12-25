@@ -13,7 +13,7 @@ const FaqSection = ({ img }) => {
     <section className="tf__faq mt_100 pt_95 xs_pt_100 pb_100">
       <div className="container">
         <div className="row">
-          <div className="col-xl-6 col-lg-6">
+          <div className="col-xl-6 col-lg-6 mt_30">
             <ScrollAnimation type="fade">
               <div className="tf__faq_img">
                 <img src={img} alt="faqs" className="img-fluid w-100" />

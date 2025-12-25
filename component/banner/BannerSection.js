@@ -10,11 +10,11 @@ const BannerSection = () => {
       <div className="container">
         <div className="row">
           {/* <img src></img> */}
-          <div className="col-xl-7 col-lg-8 ">
+          {/* <div className="col-xl-7 col-lg-8 ">
             <div className="tf__banner_text wow fadeInUp">
               
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

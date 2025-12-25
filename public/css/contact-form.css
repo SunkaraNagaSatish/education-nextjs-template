@@ -37,7 +37,7 @@
     font-size: 15px;
     color: #ffffff;
     font-weight: 600;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #2196F3;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -51,7 +51,7 @@
 .contact-form-vidisha select:hover,
 .contact-form-vidisha textarea:hover {
     border-color: rgba(255, 255, 255, 0.7);
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: #1976D2;
 }
 
 .contact-form-vidisha input[type="text"]:focus,
@@ -61,7 +61,7 @@
 .contact-form-vidisha textarea:focus {
     outline: none;
     border-color: rgba(255, 255, 255, 0.9);
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #1565C0;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-1px);
 }

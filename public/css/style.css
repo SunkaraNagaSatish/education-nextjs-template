@@ -649,11 +649,12 @@ button {
 /*-----BANNER START-----*/
 .tf__banner {
   margin-top: 90px;
-  padding: 30px 0 50px;
+  padding: 30px 0 0px;
   background-position: top center !important;
   background-repeat: no-repeat !important;
   background-size: contain !important;
   position: relative;
+  background-color: rgb(206, 206, 255);
   background-image: url(../images/banner_bg_new.jpg);
   min-height: calc(100vh - 90px);
   animation: bannerSlideshow 20s ease-in-out infinite;
@@ -1144,6 +1145,7 @@ button {
   overflow: hidden;
   position: relative;
   padding: 10px;
+  margin-top: 60px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -2911,7 +2913,7 @@ button {
 ==================================*/
 /* about start*/
 .tf__about_2_area {
-  padding-top: 50px;
+  padding-top: 0px;
 }
 
 

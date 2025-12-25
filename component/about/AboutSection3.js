@@ -49,9 +49,9 @@ const AboutSection3 = ({ style }) => {
                     className="img-fluid w-100"
                   />
                 </div>
-                <p>
+                {/* <p>
                   <span>Est.</span> 2023
-                </p>
+                </p> */}
               </div>
 
               {/* Chairman and Principal Messages under EST. 2023 */}
