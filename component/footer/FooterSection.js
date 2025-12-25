@@ -105,10 +105,7 @@ const FooterSection = () => {
                   <strong>Phone:</strong><br />
                   9121147747 | 6366527168
                 </p>
-                <p className="contact-item">
-                  <strong>Email:</strong><br />
-                  [Email Address]
-                </p>
+               
                 <p className="contact-item">
                   <strong>Business Hours:</strong><br />
                   Mon-Sat: 9 AM - 6 PM

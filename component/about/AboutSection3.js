@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import ScrollAnimation from "../utils/ScrollAnimation";
 
 const AboutSection3 = ({ style }) => {
   const [activePopup, setActivePopup] = useState(null);
@@ -31,76 +32,104 @@ const AboutSection3 = ({ style }) => {
     <div className={`${style} tf__about_2_area`}>
       <div className="container">
         <div className="row">
-          <div className="col-xl-6 col-lg-6 wow fadeInLeft">
-            <div className="tf__about_2_img">
-              <div className="tf__about_small">
-                <img
-                  src="images/about_2_img_2.jpg"
-                  alt="about us"
-                  className="img-fluid w-100"
-                />
+          <div className="col-xl-6 col-lg-6">
+            <ScrollAnimation type="fade">
+              <div className="tf__about_2_img">
+                <div className="tf__about_small">
+                  <img
+                    src="images/about_2_img_2.jpg"
+                    alt="about us"
+                    className="img-fluid w-100"
+                  />
+                </div>
+                <div className="tf__about_large">
+                  <img
+                    src="images/about_2_img_1.jpg"
+                    alt="about us"
+                    className="img-fluid w-100"
+                  />
+                </div>
+                <p>
+                  <span>Est.</span> 2023
+                </p>
               </div>
-              <div className="tf__about_large">
-                <img
-                  src="images/about_2_img_1.jpg"
-                  alt="about us"
-                  className="img-fluid w-100"
-                />
+
+              {/* Chairman and Principal Messages under EST. 2023 */}
+              <div className="about-messages-section">
+                <div className="vision-mission-item">
+                  <div
+                    className="vm-icon-wrapper"
+                    onClick={() => setActivePopup('chairman')}
+                  >
+                    <i className="far fa-check-circle"></i>
+                    <span className="vm-label">Chairman's Message</span>
+                  </div>
+                </div>
+
+                <div className="vision-mission-item">
+                  <div
+                    className="vm-icon-wrapper"
+                    onClick={() => setActivePopup('principal')}
+                  >
+                    <i className="far fa-check-circle"></i>
+                    <span className="vm-label">Principal's Message</span>
+                  </div>
+                </div>
               </div>
-              <p>
-                <span>Est.</span> 2023
-              </p>
-            </div>
+            </ScrollAnimation>
           </div>
-          <div className="col-xl-6 col-lg-6 wow fadeInRight">
-            <div className="tf__about_2_text">
-              <div className="tf__heading_area tf__heading_area_left mb_25">
-                <h5>About Vidisha</h5>
-                <h2>Building Futures Through Excellence, Dedication and Vision</h2>
-              </div>
-<br/>
-              <p className="about-intro">
-                <strong>Vidisha Junior College</strong> is a dedicated institution shaping the next generation of engineers, doctors, and responsible citizens. Founded in 2023, we are committed to ensuring every household has an engineer and a doctor.
-              </p>
-
-              <div className="about-vision-mission">
-                <div className="vision-mission-item">
-                  <div
-                    className="vm-icon-wrapper"
-                    onClick={() => setActivePopup('vision')}
-                  >
-                    <i className="far fa-check-circle"></i>
-                    <span className="vm-label">Our Vision</span>
-                  </div>
+          <div className="col-xl-6 col-lg-6">
+            <ScrollAnimation type="slideRight">
+              <div className="tf__about_2_text">
+                <div className="tf__heading_area tf__heading_area_left mb_25">
+                  <h5>About Vidisha</h5>
+                  <h2>Building Futures Through Excellence, Dedication and Vision</h2>
                 </div>
+                <br />
+                <p className="about-intro">
+                  <strong>Vidisha Junior College</strong> is a dedicated institution shaping the next generation of engineers, doctors, and responsible citizens. Founded in 2023, we are committed to ensuring every household has an engineer and a doctor.
+                </p>
 
-                <div className="vision-mission-item">
-                  <div
-                    className="vm-icon-wrapper"
-                    onClick={() => setActivePopup('mission')}
-                  >
-                    <i className="far fa-check-circle"></i>
-                    <span className="vm-label">Our Mission</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="about-pillars">
-                <h4 className="pillars-heading">Our Responsibilities</h4>
-                <div className="pillars-grid">
-                  {aboutItems.map((item) => (
+                <div className="about-vision-mission">
+                  <div className="vision-mission-item">
                     <div
-                      key={item.id}
-                      className="pillar-item"
-                      onClick={() => setActivePopup(item.id)}
+                      className="vm-icon-wrapper"
+                      onClick={() => setActivePopup('vision')}
                     >
                       <i className="far fa-check-circle"></i>
-                      <span className="pillar-title">{item.title}</span>
+                      <span className="vm-label">Our Vision</span>
                     </div>
-                  ))}
+                  </div>
+
+                  <div className="vision-mission-item">
+                    <div
+                      className="vm-icon-wrapper"
+                      onClick={() => setActivePopup('mission')}
+                    >
+                      <i className="far fa-check-circle"></i>
+                      <span className="vm-label">Our Mission</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="about-pillars">
+                  <h4 className="pillars-heading">Our Responsibilities</h4>
+                  <div className="pillars-grid">
+                    {aboutItems.map((item, index) => (
+                      <ScrollAnimation key={item.id} type="scaleIn" delay={0.1 * index}>
+                        <div
+                          className="pillar-item"
+                          onClick={() => setActivePopup(item.id)}
+                        >
+                          <i className="far fa-check-circle"></i>
+                          <span className="pillar-title">{item.title}</span>
+                        </div>
+                      </ScrollAnimation>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </div>
@@ -168,6 +197,73 @@ const AboutSection3 = ({ style }) => {
         </div>
       )}
 
+      {activePopup === 'chairman' && (
+        <div className="fullscreen-modal" onClick={() => setActivePopup(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-btn" onClick={() => setActivePopup(null)}>
+              <i className="fas fa-times"></i>
+            </button>
+            <h3 className="modal-title">Chairman's Message</h3>
+            <div className="modal-body">
+              <p>
+                It gives me immense pride and purpose to present Vidisha Junior College as a beacon of learning, ambition, and excellence for the youth of Vijayawada and beyond.
+              </p>
+              <p>
+                When I established this institution in 2023, my dream was simple yet powerful: to ensure that every household in our community has both an engineer and a doctor, shaping a future where knowledge leads progress and every family has the power to transform society.
+              </p>
+              <p>
+                At Vidisha Junior College, we believe education is not limited to textbooks or examinations. It is about building strong character, nurturing curiosity, and inspiring students to dream bigger than their circumstances. Through our MPC and BiPC programs integrated with competitive training for IIT-JEE and NEET, we are determined to guide students to achieve their highest goals with confidence and competence.
+              </p>
+              <p>
+                Our dedicated faculty, advanced learning systems, and disciplined environment work together to empower students to unlock their true potential. We stand committed to helping each learner grow into a leader with intelligence, empathy, resilience, and responsibility.
+              </p>
+              <p>
+                To every parent who entrusts us with their child's future and to every student who chooses Vidisha Junior College, I promise that we will walk with you every step of the way. Together, we will build a generation that leads with knowledge and serves with humanity.
+              </p>
+              <p style={{ marginTop: '20px', fontStyle: 'italic' }}>
+                — Kommineni Venkatesh<br />
+                Chairman, Vidisha Junior College
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {activePopup === 'principal' && (
+        <div className="fullscreen-modal" onClick={() => setActivePopup(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-btn" onClick={() => setActivePopup(null)}>
+              <i className="fas fa-times"></i>
+            </button>
+            <h3 className="modal-title">Principal's Message</h3>
+            <div className="modal-body">
+              <p>
+                At Vidisha Junior College, we believe that the right learning environment can transform a student's journey from ordinary to extraordinary.
+              </p>
+              <p>
+                Our campus is designed to provide students with a balanced and focused academic experience, supported by state-of-the-art facilities such as air-conditioned classrooms, smart digital learning systems, and technology-driven teaching methods that make complex concepts easier to understand and apply.
+              </p>
+              <p>
+                Our highly qualified and passionate faculty members work tirelessly to guide students, not only toward academic excellence but also toward building confidence, discipline, and a strong sense of purpose. We maintain an atmosphere where doubts are addressed, strengths are encouraged, and every student receives the attention they deserve.
+              </p>
+              <p>
+                The college management and board stand as a strong pillar of support, ensuring that resources, mentorship, and guidance are always accessible to our learners. Their vision and encouragement drive us to constantly enhance our methods and provide an educational experience that meets the highest standards.
+              </p>
+              <p>
+                I am proud to lead a campus where every day brings new opportunities for growth and achievement. With commitment, innovation, and teamwork, Vidisha Junior College continues to empower students to succeed in competitive fields and build meaningful futures.
+              </p>
+              <p>
+                We welcome every learner to join us in this journey of excellence, ambition, and success.
+              </p>
+              <p style={{ marginTop: '20px', fontStyle: 'italic' }}>
+                — Principal<br />
+                Vidisha Junior College
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
+
       {aboutItems.map((item) => (
         activePopup === item.id && (
           <div key={item.id} className="fullscreen-modal" onClick={() => setActivePopup(null)}>
@@ -190,6 +286,14 @@ const AboutSection3 = ({ style }) => {
           line-height: 1.8;
           margin-bottom: 30px;
           color: #333;
+        }
+
+        .about-messages-section {
+          margin-top: 40px;
+          display: flex;
+          flex-direction: row;
+          gap: 15px;
+          flex-wrap: wrap;
         }
 
         .about-vision-mission {

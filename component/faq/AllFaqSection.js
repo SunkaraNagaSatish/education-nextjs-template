@@ -3,7 +3,7 @@ import { allFaqData } from "@/data/Data";
 import React, { useState } from "react";
 
 const AllFaqSection = () => {
-  const [openAccordion, setOpenAccordion] = useState(0);
+  const [openAccordion, setOpenAccordion] = useState(null);
 
   const handleAccordionBtn = (itemId) => {
     setOpenAccordion((prevState) => (prevState === itemId ? null : itemId));
@@ -31,9 +31,8 @@ const AllFaqSection = () => {
                     >
                       <h2 className="accordion-header" id="headingOne">
                         <button
-                          className={`accordion-button ${
-                            openAccordion === item.id ? "" : "collapsed"
-                          }`}
+                          className={`accordion-button ${openAccordion === item.id ? "" : "collapsed"
+                            }`}
                           onClick={() => handleAccordionBtn(item.id)}
                         >
                           {item.title}
@@ -41,9 +40,8 @@ const AllFaqSection = () => {
                       </h2>
                       <div
                         id="collapseOne"
-                        className={`accordion-collapse collapse ${
-                          openAccordion === item.id ? "show" : ""
-                        }`}
+                        className={`accordion-collapse collapse ${openAccordion === item.id ? "show" : ""
+                          }`}
                       >
                         <div className="accordion-body">
                           <p>{item.desc}</p>

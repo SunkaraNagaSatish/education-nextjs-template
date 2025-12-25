@@ -76,7 +76,9 @@ const EventSlider = ({ startIndex, endIndex }) => {
                 </Link>
                 <p>{item.desc}</p>
                 <div className="tf__single_event_footer">
-                  <span>{item.name}</span>
+                  <Link href="/contact">
+                    <span>{item.name}</span>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -109,7 +111,9 @@ const EventSlider = ({ startIndex, endIndex }) => {
                 </Link>
                 <p>{item.desc}</p>
                 <div className="tf__single_event_footer">
-                  <span>{item.name}</span>
+                  <Link href="/contact">
+                    <span>{item.name}</span>
+                  </Link>
                 </div>
               </div>
             </div>

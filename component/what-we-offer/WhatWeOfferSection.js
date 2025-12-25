@@ -467,6 +467,12 @@ const WhatWeOfferSection = () => {
           box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
           transition: all 0.4s ease;
           border: 3px solid transparent;
+          border-bottom: none !important;
+        }
+
+        .stream-card::after,
+        .stream-card::before {
+          display: none !important;
         }
 
         .stream-card:hover {
@@ -517,6 +523,11 @@ const WhatWeOfferSection = () => {
           font-weight: 700;
           color: #1a1a1a;
           margin-bottom: 10px;
+          position: relative;
+        }
+
+        .card-title::after {
+          display: none !important;
         }
 
         .card-subtitle {

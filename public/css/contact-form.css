@@ -1,0 +1,329 @@
+/* Contact Form Vidisha - Enhanced Attractive Styling */
+
+.contact-form-vidisha {
+    padding: 30px;
+    background: transparent;
+    border-radius: 16px;
+}
+
+.contact-form-vidisha .form-group {
+    margin-bottom: 18px;
+}
+
+.contact-form-vidisha label {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    letter-spacing: 0.3px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-vidisha .required {
+    color: #ffeb3b;
+    margin-left: 3px;
+    font-size: 16px;
+}
+
+.contact-form-vidisha input[type="text"],
+.contact-form-vidisha input[type="email"],
+.contact-form-vidisha input[type="tel"],
+.contact-form-vidisha select,
+.contact-form-vidisha textarea {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-vidisha input[type="text"]:hover,
+.contact-form-vidisha input[type="email"]:hover,
+.contact-form-vidisha input[type="tel"]:hover,
+.contact-form-vidisha select:hover,
+.contact-form-vidisha textarea:hover {
+    border-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.contact-form-vidisha input[type="text"]:focus,
+.contact-form-vidisha input[type="email"]:focus,
+.contact-form-vidisha input[type="tel"]:focus,
+.contact-form-vidisha select:focus,
+.contact-form-vidisha textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+.contact-form-vidisha select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 45px;
+}
+
+.contact-form-vidisha select option {
+    padding: 12px;
+    background: #2196F3;
+    color: #ffffff;
+}
+
+.contact-form-vidisha textarea {
+    resize: vertical;
+    min-height: 120px;
+    line-height: 1.6;
+}
+
+/* Checkbox Styling - Enhanced */
+.contact-form-vidisha .checkbox-group {
+    margin-bottom: 18px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.contact-form-vidisha .checkbox-group:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-vidisha .checkbox-label {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-vidisha .checkbox-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-form-vidisha .checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.contact-form-vidisha .checkbox-option:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form-vidisha .checkbox-option input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #ffffff;
+    border-radius: 4px;
+}
+
+.contact-form-vidisha .checkbox-option span {
+    font-size: 15px;
+    color: #ffffff;
+    user-select: none;
+    font-weight: 600;
+}
+
+.contact-form-vidisha .checkbox-option input[type="checkbox"]:checked+span {
+    color: #ffeb3b;
+    font-weight: 700;
+}
+
+/* Submit Button - Enhanced */
+.contact-form-vidisha .common_btn_2 {
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    color: #ffffff;
+    border: none;
+    padding: 16px 48px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px rgba(33, 150, 243, 0.35);
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form-vidisha .common_btn_2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.contact-form-vidisha .common_btn_2:hover::before {
+    left: 100%;
+}
+
+.contact-form-vidisha .common_btn_2:hover {
+    background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+    box-shadow: 0 12px 28px rgba(33, 150, 243, 0.45);
+    transform: translateY(-3px);
+}
+
+.contact-form-vidisha .common_btn_2:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(33, 150, 243, 0.35);
+}
+
+/* Placeholder Styling */
+.contact-form-vidisha input::placeholder,
+.contact-form-vidisha textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+    font-style: italic;
+}
+
+/* Valid/Invalid States */
+.contact-form-vidisha input:valid:not(:placeholder-shown),
+.contact-form-vidisha select:valid {
+    border-color: #48bb78;
+    background-color: #f0fff4;
+}
+
+.contact-form-vidisha input:invalid:not(:placeholder-shown):not(:focus),
+.contact-form-vidisha select:invalid:not(:focus) {
+    border-color: #fc8181;
+    background-color: #fff5f5;
+}
+
+/* Form Wrapper Enhancement */
+.contact-form-wrapper {
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-vidisha {
+        padding: 20px;
+    }
+
+    .contact-form-vidisha .form-group {
+        margin-bottom: 22px;
+    }
+
+    .contact-form-vidisha label {
+        font-size: 14px;
+    }
+
+    .contact-form-vidisha input[type="text"],
+    .contact-form-vidisha input[type="email"],
+    .contact-form-vidisha input[type="tel"],
+    .contact-form-vidisha select,
+    .contact-form-vidisha textarea {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    .contact-form-vidisha .common_btn_2 {
+        width: 100%;
+        padding: 14px 30px;
+        font-size: 15px;
+    }
+
+    .contact-form-vidisha .checkbox-group {
+        padding: 15px;
+    }
+
+    .contact-form-vidisha .checkbox-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .contact-form-vidisha .checkbox-option {
+        width: 100%;
+    }
+}
+
+/* Loading State */
+.contact-form-vidisha button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+/* Focus visible for accessibility */
+.contact-form-vidisha *:focus-visible {
+    outline: 2px solid #2196F3;
+    outline-offset: 2px;
+}
+
+/* Animation for form appearance */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-form-vidisha .form-group {
+    animation: fadeInUp 0.5s ease-out backwards;
+}
+
+.contact-form-vidisha .form-group:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.contact-form-vidisha .form-group:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.contact-form-vidisha .form-group:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.contact-form-vidisha .form-group:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.contact-form-vidisha .form-group:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.contact-form-vidisha .form-group:nth-child(6) {
+    animation-delay: 0.3s;
+}

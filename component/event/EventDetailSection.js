@@ -26,7 +26,7 @@ const EventDetailSection = ({ eventDesc }) => {
               </ul>
               <h2>{eventDesc.longTitle}</h2>
               <p>{eventDesc.longDesc}</p>
-              <h3>Description Event:</h3>
+              {/* <h3>Description Event:</h3>
               <p>
                 Wras congue, sapien sed mollis accumsan, justo orci pulvinar
                 nisl, ut fermentum ante velit in ante. Vivamus blandit urna
@@ -35,19 +35,19 @@ const EventDetailSection = ({ eventDesc }) => {
                 away, behind the word mountains far from the countries vokalia
                 and Consonantia, there live the blind texts. Separated they live
                 in Book m.{" "}
-              </p>
+              </p> */}
               <div className="row">
                 <div className="col-xl-6 col-lg-6 wow fadeInUp">
-                  <div className="tf__event_det_center_img">
+                  {/* <div className="tf__event_det_center_img">
                     <img
                       src="/images/event_det_center_img.jpg"
                       alt="event"
                       className="img-fluid w-100"
                     />
-                  </div>
+                  </div> */}
                 </div>
                 <div className="col-xl-6 col-lg-6 wow fadeInUp">
-                  <div className="tf__event_det_center_text">
+                  {/* <div className="tf__event_det_center_text">
                     <h3>
                       Qualified And Highly Equipped Elit ut aliquam purus.
                     </h3>
@@ -66,10 +66,10 @@ const EventDetailSection = ({ eventDesc }) => {
                       Business tailored it design, management & support services
                       business agency elit, sed do eiusmod tempor.{" "}
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
-              <p>
+              {/* <p>
                 Wras congue, sapien sed mollis accumsan, justo orci pulvinar
                 nisl, ut fermentum ante velit in ante. Vivamus blandit urna
                 urna, quis tincidunt turpis sagittis ut. In interdum sem quis
@@ -83,7 +83,7 @@ const EventDetailSection = ({ eventDesc }) => {
                 nisl, ut fermentum ante velit in ante. Vivamus blandit urna
                 urna, quis tincidunt turpis sagittis ut. In interdum sem quis
                 congue accumsan. Pellentesque convallis scelerisque.{" "}
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

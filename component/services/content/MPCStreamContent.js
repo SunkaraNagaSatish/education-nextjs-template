@@ -1,102 +1,102 @@
 import React from "react";
 
 const MPCStreamContent = () => (
-    <>
-        <div className="container content-wrapper">
-            <div className="hero-section">
-                <div className="hero-icon">
-                    <i className="fas fa-calculator"></i>
-                </div>
-                <h1 className="main-title">MPC Stream</h1>
-                <p className="main-subtitle">Mathematics, Physics, Chemistry</p>
-                <p className="hero-desc">Your Gateway to Engineering Excellence</p>
-            </div>
+  <>
+    <div className="container content-wrapper">
+      <div className="hero-section">
+        <div className="hero-icon">
+          <i className="fas fa-calculator"></i>
+        </div>
+        <h1 className="main-title">MPC Stream</h1>
+        <p className="main-subtitle">Mathematics, Physics, Chemistry</p>
+        <p className="hero-desc">Your Gateway to Engineering Excellence</p>
+      </div>
 
-            <div className="content-grid">
-                <div className="content-card highlight-card">
-                    <h2 className="card-title">Program Overview</h2>
-                    <p className="card-text">
-                        The MPC stream at Vidisha Junior College is meticulously designed for students aspiring to become engineers and pursue careers in technology, innovation, and scientific research. This comprehensive program seamlessly integrates the complete intermediate board syllabus with intensive IIT JEE Mains and Advanced coaching, providing students with a unified and focused learning experience under one roof.
-                    </p>
-                    <p className="card-text">
-                        Our curriculum goes far beyond traditional classroom teaching. We emphasize deep conceptual understanding, analytical thinking, and advanced problem solving skills that are essential for success in both board examinations and highly competitive engineering entrance tests. Every topic is taught with dual focus, ensuring students master concepts for immediate academic success while building foundations for future engineering studies and professional careers.
-                    </p>
-                </div>
-
-                <div className="content-card">
-                    <div className="card-icon blue-gradient">
-                        <i className="fas fa-book-open"></i>
-                    </div>
-                    <h3 className="card-subtitle">Comprehensive Curriculum</h3>
-                    <p className="card-text">
-                        Our MPC curriculum covers the entire intermediate syllabus in Mathematics, Physics, and Chemistry with exceptional depth and clarity. Mathematics modules include differential and integral calculus, algebra, trigonometry, vectors, three dimensional geometry, and probability, all taught with emphasis on both theoretical understanding and practical application in engineering contexts.
-                    </p>
-                    <p className="card-text">
-                        Physics instruction encompasses comprehensive coverage of mechanics, thermodynamics, electromagnetism, waves and optics, and modern physics with extensive problem solving practice. Chemistry syllabus includes physical chemistry with numerical problems, organic chemistry with detailed reaction mechanisms, and inorganic chemistry with periodic properties and coordination compounds, all perfectly aligned with JEE examination patterns and requirements.
-                    </p>
-                </div>
-
-                <div className="content-card">
-                    <div className="card-icon green-gradient">
-                        <i className="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3 className="card-subtitle">IIT JEE Preparation</h3>
-                    <p className="card-text">
-                        Students receive focused and intensive training specifically designed for IIT JEE Mains and Advanced examinations. Our coaching methodology includes comprehensive topic wise modules that systematically break down the vast JEE syllabus into manageable and digestible segments, regular intensive practice sessions with carefully selected previous year questions, and full length mock tests that accurately simulate actual exam conditions and difficulty levels.
-                    </p>
-                    <p className="card-text">
-                        We employ time tested and proven strategies for tackling multiple choice questions, complex numerical problems, and challenging assertion reasoning questions. Advanced time management techniques, efficient shortcut methods, and strategic exam approaches are taught systematically and reinforced through practice. Students learn to accurately identify high weightage topics, intelligently prioritize their preparation efforts, and develop the exceptional speed and pinpoint accuracy required to excel in these intensely competitive examinations.
-                    </p>
-                </div>
-
-                <div className="content-card">
-                    <div className="card-icon orange-gradient">
-                        <i className="fas fa-flask"></i>
-                    </div>
-                    <h3 className="card-subtitle">Practical Laboratory Training</h3>
-                    <p className="card-text">
-                        Our state of the art Physics and Chemistry laboratories, equipped with modern instruments and safety equipment, provide extensive hands on experience with experiments that effectively bring abstract theoretical concepts to vivid life. Students actively perform experiments in mechanics, electricity and magnetism, optics, chemical kinetics, electrochemistry, and qualitative inorganic analysis, systematically developing essential practical skills and cultivating genuine scientific temperament.
-                    </p>
-                    <p className="card-text">
-                        Laboratory sessions are carefully designed to powerfully reinforce classroom learning, build unwavering confidence in handling sophisticated scientific equipment, and develop sharp observation skills and rigorous analytical abilities. Regular comprehensive practical examinations ensure students are thoroughly and confidently prepared for board practical exams while simultaneously understanding the fascinating real world applications of fundamental scientific principles in engineering and technology fields.
-                    </p>
-                </div>
-
-                <div className="content-card">
-                    <div className="card-icon purple-gradient">
-                        <i className="fas fa-chart-line"></i>
-                    </div>
-                    <h3 className="card-subtitle">Continuous Assessment and Progress Tracking</h3>
-                    <p className="card-text">
-                        We maintain a rigorous and comprehensive assessment system featuring weekly subject specific tests, monthly integrated examinations, and quarterly comprehensive evaluations covering the entire syllabus. Each carefully designed test covers both board exam patterns and diverse JEE question types, providing students with valuable exposure to varied problem formats, multiple difficulty levels, and different questioning styles that build versatility and adaptability.
-                    </p>
-                    <p className="card-text">
-                        Detailed and insightful performance analysis conducted after each assessment helps accurately identify individual strengths to leverage and specific weaknesses to address. Students receive highly personalized feedback, precisely targeted study recommendations, and customized intensive doubt clearing sessions tailored to their unique needs. Parents are regularly and transparently updated about comprehensive academic progress, detailed test performances, and specific areas requiring additional focused attention through our efficient and open communication system.
-                    </p>
-                </div>
-
-                <div className="content-card">
-                    <div className="card-icon teal-gradient">
-                        <i className="fas fa-users-cog"></i>
-                    </div>
-                    <h3 className="card-subtitle">Expert Faculty and Mentorship</h3>
-                    <p className="card-text">
-                        Our distinguished MPC faculty comprises highly qualified and extensively experienced educators with proven track records in both intermediate board teaching and competitive exam coaching. They possess exceptional deep subject knowledge, thoroughly understand the intricate nuances of JEE examination patterns and marking schemes, and skillfully employ innovative and engaging teaching methodologies that make even the most complex and challenging concepts accessible, understandable, and genuinely interesting for students.
-                    </p>
-                    <p className="card-text">
-                        Beyond traditional classroom instruction, our dedicated faculty members serve as caring mentors who provide invaluable personalized guidance, insightful career counseling for engineering streams and specializations, and crucial emotional support throughout the demanding preparation journey. Regular accessible doubt clearing sessions ensure absolutely no student is ever left behind or confused. Teachers remain readily available for meaningful one on one interactions, patiently helping students systematically overcome academic challenges and steadily build genuine confidence in their growing abilities and potential for success.
-                    </p>
-                </div>
-            </div>
-
-            <div className="cta-section">
-                <h2 className="cta-title">Ready to Begin Your Engineering Journey?</h2>
-                <p className="cta-text">Join Vidisha Junior College MPC stream and transform your engineering dreams into reality with expert guidance, comprehensive preparation, and unwavering support.</p>
-                <a href="/contact" className="cta-button">Enroll Now</a>
-            </div>
+      <div className="content-grid">
+        <div className="content-card highlight-card">
+          <h2 className="card-title">Program Overview</h2>
+          <p className="card-text">
+            The MPC stream at Vidisha Junior College is meticulously designed for students aspiring to become engineers and pursue careers in technology, innovation, and scientific research. This comprehensive program seamlessly integrates the complete intermediate board syllabus with intensive IIT JEE Mains and Advanced coaching, providing students with a unified and focused learning experience under one roof.
+          </p>
+          <p className="card-text">
+            Our curriculum goes far beyond traditional classroom teaching. We emphasize deep conceptual understanding, analytical thinking, and advanced problem solving skills that are essential for success in both board examinations and highly competitive engineering entrance tests. Every topic is taught with dual focus, ensuring students master concepts for immediate academic success while building foundations for future engineering studies and professional careers.
+          </p>
         </div>
 
-        <style jsx>{`
+        <div className="content-card">
+          <div className="card-icon blue-gradient">
+            <i className="fas fa-book-open"></i>
+          </div>
+          <h3 className="card-subtitle">Comprehensive Curriculum</h3>
+          <p className="card-text">
+            Our MPC curriculum covers the entire intermediate syllabus in Mathematics, Physics, and Chemistry with exceptional depth and clarity. Mathematics modules include differential and integral calculus, algebra, trigonometry, vectors, three dimensional geometry, and probability, all taught with emphasis on both theoretical understanding and practical application in engineering contexts.
+          </p>
+          <p className="card-text">
+            Physics instruction encompasses comprehensive coverage of mechanics, thermodynamics, electromagnetism, waves and optics, and modern physics with extensive problem solving practice. Chemistry syllabus includes physical chemistry with numerical problems, organic chemistry with detailed reaction mechanisms, and inorganic chemistry with periodic properties and coordination compounds, all perfectly aligned with JEE examination patterns and requirements.
+          </p>
+        </div>
+
+        <div className="content-card">
+          <div className="card-icon green-gradient">
+            <i className="fas fa-graduation-cap"></i>
+          </div>
+          <h3 className="card-subtitle">IIT JEE Preparation</h3>
+          <p className="card-text">
+            Students receive focused and intensive training specifically designed for IIT JEE Mains and Advanced examinations. Our coaching methodology includes comprehensive topic wise modules that systematically break down the vast JEE syllabus into manageable and digestible segments, regular intensive practice sessions with carefully selected previous year questions, and full length mock tests that accurately simulate actual exam conditions and difficulty levels.
+          </p>
+          <p className="card-text">
+            We employ time tested and proven strategies for tackling multiple choice questions, complex numerical problems, and challenging assertion reasoning questions. Advanced time management techniques, efficient shortcut methods, and strategic exam approaches are taught systematically and reinforced through practice. Students learn to accurately identify high weightage topics, intelligently prioritize their preparation efforts, and develop the exceptional speed and pinpoint accuracy required to excel in these intensely competitive examinations.
+          </p>
+        </div>
+
+        <div className="content-card">
+          <div className="card-icon orange-gradient">
+            <i className="fas fa-flask"></i>
+          </div>
+          <h3 className="card-subtitle">Practical Laboratory Training</h3>
+          <p className="card-text">
+            Our state of the art Physics and Chemistry laboratories, equipped with modern instruments and safety equipment, provide extensive hands on experience with experiments that effectively bring abstract theoretical concepts to vivid life. Students actively perform experiments in mechanics, electricity and magnetism, optics, chemical kinetics, electrochemistry, and qualitative inorganic analysis, systematically developing essential practical skills and cultivating genuine scientific temperament.
+          </p>
+          <p className="card-text">
+            Laboratory sessions are carefully designed to powerfully reinforce classroom learning, build unwavering confidence in handling sophisticated scientific equipment, and develop sharp observation skills and rigorous analytical abilities. Regular comprehensive practical examinations ensure students are thoroughly and confidently prepared for board practical exams while simultaneously understanding the fascinating real world applications of fundamental scientific principles in engineering and technology fields.
+          </p>
+        </div>
+
+        <div className="content-card">
+          <div className="card-icon purple-gradient">
+            <i className="fas fa-chart-line"></i>
+          </div>
+          <h3 className="card-subtitle">Continuous Assessment and Progress Tracking</h3>
+          <p className="card-text">
+            We maintain a rigorous and comprehensive assessment system featuring weekly subject specific tests, monthly integrated examinations, and quarterly comprehensive evaluations covering the entire syllabus. Each carefully designed test covers both board exam patterns and diverse JEE question types, providing students with valuable exposure to varied problem formats, multiple difficulty levels, and different questioning styles that build versatility and adaptability.
+          </p>
+          <p className="card-text">
+            Detailed and insightful performance analysis conducted after each assessment helps accurately identify individual strengths to leverage and specific weaknesses to address. Students receive highly personalized feedback, precisely targeted study recommendations, and customized intensive doubt clearing sessions tailored to their unique needs. Parents are regularly and transparently updated about comprehensive academic progress, detailed test performances, and specific areas requiring additional focused attention through our efficient and open communication system.
+          </p>
+        </div>
+
+        <div className="content-card">
+          <div className="card-icon teal-gradient">
+            <i className="fas fa-users-cog"></i>
+          </div>
+          <h3 className="card-subtitle">Expert Faculty and Mentorship</h3>
+          <p className="card-text">
+            Our distinguished MPC faculty comprises highly qualified and extensively experienced educators with proven track records in both intermediate board teaching and competitive exam coaching. They possess exceptional deep subject knowledge, thoroughly understand the intricate nuances of JEE examination patterns and marking schemes, and skillfully employ innovative and engaging teaching methodologies that make even the most complex and challenging concepts accessible, understandable, and genuinely interesting for students.
+          </p>
+          <p className="card-text">
+            Beyond traditional classroom instruction, our dedicated faculty members serve as caring mentors who provide invaluable personalized guidance, insightful career counseling for engineering streams and specializations, and crucial emotional support throughout the demanding preparation journey. Regular accessible doubt clearing sessions ensure absolutely no student is ever left behind or confused. Teachers remain readily available for meaningful one on one interactions, patiently helping students systematically overcome academic challenges and steadily build genuine confidence in their growing abilities and potential for success.
+          </p>
+        </div>
+      </div>
+
+      <div className="cta-section">
+        <h2 className="cta-title">Ready to Begin Your Engineering Journey?</h2>
+        <p className="cta-text">Join Vidisha Junior College MPC stream and transform your engineering dreams into reality with expert guidance, comprehensive preparation, and unwavering support.</p>
+        <a href="/contact" className="cta-button">Enroll Now</a>
+      </div>
+    </div>
+
+    <style jsx>{`
       .container {
         position: relative;
         z-index: 2;
@@ -183,10 +183,17 @@ const MPCStreamContent = () => (
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
       }
 
+      .content-card:last-of-type:nth-child(odd) {
+        grid-column: 1 / -1;
+      }
+
+      .content-card:nth-child(6) {
+        grid-column: 1 / -1;
+      }
+
       .highlight-card {
         grid-column: 1 / -1;
         background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-        border-left: 5px solid #2196F3;
       }
 
       .card-icon {
@@ -256,17 +263,20 @@ const MPCStreamContent = () => (
 
       .cta-title {
         font-size: 36px;
-        font-weight: 700;
+        font-weight: 800;
         margin-bottom: 20px;
+        color: white;
       }
 
       .cta-text {
         font-size: 18px;
+        font-weight: 600;
         margin-bottom: 30px;
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
         line-height: 1.7;
+        color: white;
       }
 
       .cta-button {
@@ -335,7 +345,7 @@ const MPCStreamContent = () => (
         }
       }
     `}</style>
-    </>
+  </>
 );
 
 export default MPCStreamContent;

@@ -2,6 +2,7 @@
 import React from "react";
 import ContactForm from "../form/ContactForm";
 import "./contact-page.css";
+import "../../public/css/contact-form.css";
 
 const ContactPageSection = () => {
   return (
@@ -55,8 +56,32 @@ const ContactPageSection = () => {
                 <div className="info-content">
                   <h3 className="info-title">Email Us</h3>
                   <div className="info-details">
-                    <a href="mailto:vidishajrcollegevij@gmail.com" className="info-link email-link">
-                      vidishajrcollegevij@gmail.com
+                    <a href="mailto:Chairman@vidishaedusociety.com" className="info-link email-link">
+                      Chairman@vidishaedusociety.com
+                    </a>
+                    <a href="mailto:Management@vidishaedusociety.com" className="info-link email-link">
+                      Management@vidishaedusociety.com
+                    </a>
+                    <a href="mailto:Accounts@vidishaedusociety.com" className="info-link email-link">
+                      Accounts@vidishaedusociety.com
+                    </a>
+                    <a href="mailto:Enquiry@vidishaedusociety.com" className="info-link email-link">
+                      Enquiry@vidishaedusociety.com
+                    </a>
+                    <a href="mailto:Vijayawada@vidishaedusociety.com" className="info-link email-link">
+                      Vijayawada@vidishaedusociety.com
+                    </a>
+                    <a href="mailto:Visakhapatnam@vidishaedusociety.com" className="info-link email-link">
+                      Visakhapatnam@vidishaedusociety.com
+                    </a>
+                    <a href="mailto:Hyderabad@vidishaedusociety.com" className="info-link email-link">
+                      Hyderabad@vidishaedusociety.com
+                    </a>
+                    <a href="mailto:Guntur@vidishaedusociety.com" className="info-link email-link">
+                      Guntur@vidishaedusociety.com
+                    </a>
+                    <a href="mailto:Kakinada@vidishaedusociety.com" className="info-link email-link">
+                      Kakinada@vidishaedusociety.com
                     </a>
                   </div>
                 </div>

@@ -4,7 +4,7 @@ import BlogSlider from "../slider/BlogSlider";
 
 const BlogSection = () => {
   return (
-    <div className="tf__blog mt_95">
+    <div className="tf__blog mt_25">
       <div className="container">
         <div className="row">
           <div className="col-xl-6 col-lg-6 m-auto wow fadeInUp">

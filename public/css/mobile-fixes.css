@@ -1,0 +1,321 @@
+/* Mobile Responsiveness Fixes */
+
+/* Tablets and below */
+@media (max-width: 991.99px) {
+
+    /* Reduce navbar height */
+    .main_menu {
+        height: 60px !important;
+    }
+
+    .main_menu .navbar-nav {
+        line-height: 60px !important;
+    }
+
+    .main_menu .navbar-brand {
+        max-width: 250px !important;
+    }
+
+    /* Adjust banner for reduced navbar */
+    .tf__banner {
+        margin-top: 60px !important;
+        padding: 30px 0 40px !important;
+        min-height: 400px !important;
+    }
+
+    .tf__banner_text {
+        padding-top: 30px !important;
+    }
+
+    /* Fixed navbar adjustments */
+    .menu_fix {
+        height: 60px !important;
+    }
+
+    .menu_fix .navbar-nav {
+        line-height: 60px !important;
+    }
+
+    /* Reduce section spacing */
+    .mt_95 {
+        margin-top: 40px !important;
+    }
+
+    .mt_100 {
+        margin-top: 30px !important;
+    }
+
+    .mt_120 {
+        margin-top: 40px !important;
+    }
+
+    .pt_95 {
+        padding-top: 30px !important;
+    }
+
+    .pt_100 {
+        padding-top: 30px !important;
+    }
+
+    .pt_120 {
+        padding-top: 40px !important;
+    }
+
+    .pb_100 {
+        padding-bottom: 30px !important;
+    }
+
+    .pb_120 {
+        padding-bottom: 40px !important;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 767.99px) {
+
+    /* Further reduce navbar height on mobile */
+    .main_menu {
+        height: 50px !important;
+        padding: 0 !important;
+    }
+
+    .main_menu .container {
+        padding: 0 15px !important;
+    }
+
+    .main_menu .navbar-brand {
+        max-width: 200px !important;
+        margin-left: 0 !important;
+    }
+
+    .main_menu .navbar-toggler {
+        padding: 8px 10px !important;
+        font-size: 18px !important;
+    }
+
+    /* Banner adjustments for mobile - keep good height */
+    .tf__banner {
+        margin-top: 50px !important;
+        padding: 30px 0 40px !important;
+        min-height: 350px !important;
+        background-position: top center !important;
+    }
+
+    .tf__banner_text {
+        padding-top: 20px !important;
+    }
+
+    .tf__banner_text h5 {
+        font-size: 16px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .tf__banner_text h1 {
+        font-size: 35px !important;
+    }
+
+    .tf__banner_text h1 span {
+        font-size: 35px !important;
+    }
+
+    .tf__banner_text p {
+        font-size: 15px !important;
+        max-width: 100% !important;
+        margin: 12px 0px 25px 0px !important;
+    }
+
+    /* Remove excessive spacing */
+    .tf__banner::after,
+    .tf__banner::before {
+        display: none !important;
+    }
+
+    /* Fixed navbar on mobile */
+    .menu_fix {
+        height: 50px !important;
+    }
+
+    .menu_fix .navbar-brand {
+        max-width: 180px !important;
+    }
+
+    /* Ensure content doesn't hide behind navbar */
+    body {
+        padding-top: 0 !important;
+    }
+
+    /* Aggressive section spacing reduction - THIS is where we save space */
+    .mt_95,
+    .mt_100,
+    .mt_120,
+    .mt_250 {
+        margin-top: 20px !important;
+    }
+
+    .mb_95,
+    .mb_100,
+    .mb_120 {
+        margin-bottom: 20px !important;
+    }
+
+    .pt_95,
+    .pt_100,
+    .pt_120,
+    .pt_75,
+    .pt_115 {
+        padding-top: 20px !important;
+    }
+
+    .pb_95,
+    .pb_100,
+    .pb_120 {
+        padding-bottom: 20px !important;
+    }
+
+    /* Section padding */
+    section {
+        padding: 30px 0 !important;
+    }
+
+    .tf__categories {
+        padding: 20px 0 !important;
+    }
+
+    .tf__about {
+        padding: 30px 0 !important;
+    }
+
+    .tf__event {
+        padding: 30px 0 !important;
+    }
+
+    /* Heading margins */
+    .tf__heading_area {
+        margin-bottom: 20px !important;
+    }
+
+    .mb_15 {
+        margin-bottom: 15px !important;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 575.99px) {
+    .main_menu {
+        height: 50px !important;
+    }
+
+    .main_menu .navbar-brand {
+        max-width: 180px !important;
+    }
+
+    .tf__banner {
+        margin-top: 50px !important;
+        padding: 25px 0 35px !important;
+        min-height: 300px !important;
+    }
+
+    .tf__banner_text {
+        padding-top: 15px !important;
+    }
+
+    .tf__banner_text h1 {
+        font-size: 28px !important;
+    }
+
+    .tf__banner_text h1 span {
+        font-size: 28px !important;
+    }
+
+    .tf__banner_text h5 {
+        font-size: 14px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .tf__banner_text p {
+        font-size: 14px !important;
+        margin: 10px 0px 20px 0px !important;
+    }
+
+    .common_btn {
+        padding: 12px 25px !important;
+        font-size: 14px !important;
+    }
+
+    /* Even more aggressive spacing reduction for sections */
+    .mt_95,
+    .mt_100,
+    .mt_120,
+    .mt_250 {
+        margin-top: 15px !important;
+    }
+
+    .pt_95,
+    .pt_100,
+    .pt_120,
+    .pt_75,
+    .pt_115 {
+        padding-top: 15px !important;
+    }
+
+    section {
+        padding: 20px 0 !important;
+    }
+
+    .tf__categories {
+        padding: 15px 0 !important;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 400px) {
+    .main_menu .navbar-brand {
+        max-width: 160px !important;
+    }
+
+    .tf__banner {
+        padding: 20px 0 30px !important;
+        min-height: 280px !important;
+    }
+
+    .tf__banner_text h1 {
+        font-size: 24px !important;
+    }
+
+    .tf__banner_text h1 span {
+        font-size: 24px !important;
+    }
+
+    .tf__banner_text h5 {
+        font-size: 13px !important;
+    }
+
+    .tf__banner_text p {
+        font-size: 13px !important;
+        margin: 8px 0px 18px 0px !important;
+    }
+
+    /* Minimal spacing for sections only */
+    .mt_95,
+    .mt_100,
+    .mt_120,
+    .mt_250 {
+        margin-top: 10px !important;
+    }
+
+    .pt_95,
+    .pt_100,
+    .pt_120,
+    .pt_75,
+    .pt_115 {
+        padding-top: 10px !important;
+    }
+
+    section {
+        padding: 15px 0 !important;
+    }
+
+    .tf__categories {
+        padding: 10px 0 !important;
+    }
+}

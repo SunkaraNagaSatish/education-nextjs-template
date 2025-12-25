@@ -5,24 +5,58 @@ import React from "react";
 const AllCourseSection = () => {
   return (
     <section className="tf__courses_page mt_190 xs_mt_95">
+      {/* Decorative Shapes Set 1 - Top */}
+      <div className="decorative-shape diamond-dots" style={{ top: '3%', left: '2%' }}>
+        <img src="/images/dot_shapes.png" alt="dots" className="img-fluid" />
+      </div>
+
+
+      {/* Decorative Shapes Set 2 - Between MPC Courses */}
+      <div className="decorative-shape open-book" style={{ top: '25%', left: '1%' }}>
+        <img src="/images/book_shapes.png" alt="book" className="img-fluid" />
+      </div>
+      <div className="decorative-shape red-pen" style={{ top: '30%', right: '2%' }}>
+        <img src="/images/pen_shapes.png" alt="pen" className="img-fluid" />
+      </div>
+
+      {/* Decorative Shapes Set 3 - Middle (Between Streams) */}
+      <div className="decorative-shape diamond-dots" style={{ top: '50%', right: '3%' }}>
+        <img src="/images/dot_shapes.png" alt="dots" className="img-fluid" />
+      </div>
+
+
+      {/* Decorative Shapes Set 4 - BiPC Section */}
+      <div className="decorative-shape open-book" style={{ top: '75%', left: '1%' }}>
+        <img src="/images/book_shapes.png" alt="book" className="img-fluid" />
+      </div>
+      <div className="decorative-shape red-pen" style={{ top: '80%', right: '3%' }}>
+        <img src="/images/pen_shapes.png" alt="pen" className="img-fluid" />
+      </div>
+
+      {/* Decorative Shapes Set 5 - Bottom */}
+      <div className="decorative-shape diamond-dots" style={{ bottom: '5%', left: '3%' }}>
+        <img src="/images/dot_shapes.png" alt="dots" className="img-fluid" />
+      </div>
+
+
       <div className="container">
         {/* Page Headline */}
         <div className="row wow fadeInUp">
           <div className="col-xl-8 col-lg-10 m-auto">
             <div className="tf__heading_area mb_15 text-center">
               <h2>Courses Designed for Excellence</h2>
-              <p>Integrated Intermediate Education with IIT-JEE & NEET Coaching</p>
+              <p style={{ color: '#000000' }}>Integrated Intermediate Education with IIT-JEE & NEET Coaching</p>
             </div>
           </div>
         </div>
 
         {/* MPC STREAM Section */}
-        <div className="row mt_50">
+        <div className="row mt_30">
           <div className="col-12">
             <div className="tf__heading_area mb_30">
               <h3>MPC STREAM (Mathematics, Physics, Chemistry)</h3>
               <h5>For Students Aspiring to Become Engineers</h5>
-              <p>Our MPC program is specifically designed for students targeting admissions into premier engineering colleges through IIT-JEE Mains and Advanced exams, while also excelling in intermediate board examinations.</p>
+              <p style={{ color: '#000000' }}>Our MPC program is specifically designed for students targeting admissions into premier engineering colleges through IIT-JEE Mains and Advanced exams, while also excelling in intermediate board examinations.</p>
             </div>
           </div>
         </div>
@@ -129,7 +163,7 @@ const AllCourseSection = () => {
             <div className="tf__heading_area mb_30">
               <h3>BiPC STREAM (Biology, Physics, Chemistry)</h3>
               <h5>For Students Aspiring to Become Doctors</h5>
-              <p>Our BiPC program is tailored for students targeting admissions into top medical colleges through NEET (National Eligibility cum Entrance Test), while also ensuring excellent performance in intermediate board examinations.</p>
+              <p style={{ color: '#000000' }}>Our BiPC program is tailored for students targeting admissions into top medical colleges through NEET (National Eligibility cum Entrance Test), while also ensuring excellent performance in intermediate board examinations.</p>
             </div>
           </div>
         </div>
