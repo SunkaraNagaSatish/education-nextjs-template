@@ -2,8 +2,8 @@ import ErrorSection from "@/component/error/ErrorSection";
 import Layout from "@/component/layout/Layout";
 
 export const metadata = {
-  title: 'Eduor 404 Page',
-  description: 'Developed by Azizur Rahman',
+  title: 'Vidisha',
+  description: 'Developed by AthenWeb',
 }
 export default function NotFound() {
   return (

@@ -1,8 +1,8 @@
 import RegisterSection from "@/component/authentication/RegisterSection";
 import Layout from "@/component/layout/Layout";
 export const metadata = {
-    title: 'Eduor Sign-Up Page',
-    description: 'Developed by Azizur Rahman',
+    title: 'Vidisha Sign-Up Page',
+    description: 'Developed by AthenWeb',
 }
 export default function SignUp() {
     return (

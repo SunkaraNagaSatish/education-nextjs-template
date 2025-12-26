@@ -14,7 +14,7 @@ import VideoSection from "@/component/video/VideoSection";
 
 export const metadata = {
   title: "Vidisha Junior College",
-  description: "Developed by Azizur Rahman",
+  description: "Developed by AthenWeb",
 };
 
 export default function Home() {

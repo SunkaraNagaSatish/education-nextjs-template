@@ -1,8 +1,8 @@
 import AllFaqSection from "@/component/faq/AllFaqSection";
 import Layout from "@/component/layout/Layout";
 export const metadata = {
-    title: 'Eduor FAQ Page',
-    description: 'Developed by Azizur Rahman',
+    title: 'Vidisha FAQ',
+    description: 'Developed by AthenWeb',
 }
 export default function Faq() {
     return (

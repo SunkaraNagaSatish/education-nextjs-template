@@ -3,8 +3,8 @@ import EventDetailSection from "@/component/event/EventDetailSection";
 import Layout from "@/component/layout/Layout";
 import { eventData } from "@/data/Data";
 export const metadata = {
-    title: 'Eduor Event Details Page',
-    description: 'Developed by Azizur Rahman',
+    title: 'Vidisha',
+    description: 'Developed by AthenWeb',
 }
 export default function EventDetails({ params }) {
     const { slug } = params;

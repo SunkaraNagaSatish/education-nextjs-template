@@ -1,8 +1,8 @@
 import Layout from "@/component/layout/Layout";
 import TermSection from "@/component/terms/TermSection";
 export const metadata = {
-    title: 'Eduor Privacy & Policy Page',
-    description: 'Developed by Azizur Rahman',
+    title: 'Vidisha Privacy & Policy Page',
+    description: 'Developed by AthenWeb',
 }
 export default function PrivacyPolicy() {
     return (

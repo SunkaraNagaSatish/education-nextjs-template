@@ -1,8 +1,8 @@
 import Layout from "@/component/layout/Layout";
 import AllTeamMemberSection from "@/component/team/AllTeamMemberSection";
 export const metadata = {
-    title: 'Eduor Team Page',
-    description: 'Developed by Azizur Rahman',
+    title: 'Vidisha',
+    description: 'Developed by AthenWeb',
 }
 export default function Team() {
     return (
