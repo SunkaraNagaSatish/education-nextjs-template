@@ -39,3 +39,10 @@
     height: auto;
     display: flex;
 }
+
+/* Add bottom padding to prevent pagination dots from overlapping */
+.event_slider,
+.work_slider,
+.blog_slider {
+    padding-bottom: 50px;
+}

@@ -22,7 +22,7 @@
 }
 
 .contact-form-vidisha .required {
-    color: #ffeb3b;
+    color: #ff0000;
     margin-left: 3px;
     font-size: 16px;
 }
@@ -37,7 +37,7 @@
     font-size: 15px;
     color: #ffffff;
     font-weight: 600;
-    background-color: #2196F3;
+    background-color: #2378be;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -51,7 +51,7 @@
 .contact-form-vidisha select:hover,
 .contact-form-vidisha textarea:hover {
     border-color: rgba(255, 255, 255, 0.7);
-    background-color: #1976D2;
+    background-color: #2378be;
 }
 
 .contact-form-vidisha input[type="text"]:focus,
@@ -61,7 +61,7 @@
 .contact-form-vidisha textarea:focus {
     outline: none;
     border-color: rgba(255, 255, 255, 0.9);
-    background-color: #1565C0;
+    background-color: #2378be;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
     transform: translateY(-1px);
 }
@@ -78,7 +78,7 @@
 
 .contact-form-vidisha select option {
     padding: 12px;
-    background: #2196F3;
+    background: #2378be;
     color: #ffffff;
 }
 
@@ -161,7 +161,7 @@
 
 /* Submit Button - Enhanced */
 .contact-form-vidisha .common_btn_2 {
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    background: #2378be;
     color: #ffffff;
     border: none;
     padding: 16px 48px;
@@ -194,7 +194,7 @@
 }
 
 .contact-form-vidisha .common_btn_2:hover {
-    background: linear-gradient(135deg, #1976D2 0%, #1565C0 100%);
+    background: #2378be;
     box-shadow: 0 12px 28px rgba(33, 150, 243, 0.45);
     transform: translateY(-3px);
 }
@@ -221,8 +221,9 @@
 
 .contact-form-vidisha input:invalid:not(:placeholder-shown):not(:focus),
 .contact-form-vidisha select:invalid:not(:focus) {
-    border-color: #fc8181;
-    background-color: #fff5f5;
+    border-color: #ffffff;
+    background-color: 
+rgba(89, 176, 246);
 }
 
 /* Form Wrapper Enhancement */

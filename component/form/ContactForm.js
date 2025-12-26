@@ -72,7 +72,7 @@ const ContactForm = () => {
     <form onSubmit={handleFormSubmit} className="contact-form-vidisha">
       <div className="row">
         {/* Student Name */}
-        <div className="col-xl-6 col-lg-6 col-md-6">
+        <div className="col-xl-6 col-lg-4 col-md-6">
           <div className="form-group">
             <label htmlFor="studentName">Your Name <span className="required">*</span></label>
             <input

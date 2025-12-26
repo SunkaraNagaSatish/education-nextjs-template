@@ -60,7 +60,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  color: #2196F3;
+  color: #2378be;
   font-family: var(--headingFont);
 }
 
@@ -69,14 +69,14 @@ span {
   font-size: 16px;
   font-weight: 400;
   margin: 0;
-  color: #2196F3;
+  color: #2378be;
 }
 
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   font-family: var(--paraFont);
-  color: #2196F3;
+  color: #2378be;
   background-color: #ffffff;
 }
 
@@ -112,8 +112,8 @@ button {
 }
 
 :root {
-  --colorPrimary: #4582ff;
-  --colorBlue: #4582ff;
+  --colorPrimary: #2378be;
+  --colorBlue: #2378be;
   --colorGreen: #00d6d3;
   --colorBlack: #0f2239;
   --paraColor: #636363;
@@ -327,7 +327,7 @@ button {
   font-weight: 700;
   text-transform: capitalize;
   margin-bottom: 15px;
-  color: #2196F3;
+  color: #2378be;
 }
 
 .tf__breadcrumb_text ul {
@@ -654,7 +654,7 @@ button {
   background-repeat: no-repeat !important;
   background-size: contain !important;
   position: relative;
-  background-color: rgb(206, 206, 255);
+  background-color: rgba(199, 213, 239);
   background-image: url(../images/banner_bg_new.jpg);
   min-height: calc(100vh - 90px);
   animation: bannerSlideshow 20s ease-in-out infinite;
@@ -742,7 +742,7 @@ button {
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
-  color: rgb(0, 89, 255);
+  color: rgba(35, 120, 190);
   padding-left: 20px;
   font-family: var(--paraFont);
   position: relative;
@@ -1770,7 +1770,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .slick-dots li {
