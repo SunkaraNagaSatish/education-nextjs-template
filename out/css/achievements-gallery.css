@@ -1,0 +1,471 @@
+/* Achievements Gallery Section */
+.achievements-gallery-section {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.achievements-gallery-section .tf__heading_area {
+    margin-top: 100px;
+}
+
+.achievements-list {
+    margin-top: 50px;
+}
+
+.achievement-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 80px;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.achievement-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.achievement-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.achievement-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.achievement-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.achievement-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.achievement-item.image-left .achievement-image-container {
+    order: 1;
+}
+
+.achievement-item.image-left .achievement-description {
+    order: 2;
+}
+
+.achievement-item.image-right .achievement-image-container {
+    order: 2;
+}
+
+.achievement-item.image-right .achievement-description {
+    order: 1;
+}
+
+.achievement-image-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    height: 400px;
+    background: #fff;
+}
+
+.achievement-image-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.achievement-image-container:hover .achievement-img {
+    transform: scale(1.1);
+}
+
+.achievement-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video-play-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.achievement-image-container:hover .video-play-overlay {
+    transform: translate(-50%, -50%) scale(1.15);
+}
+
+.video-play-overlay svg {
+    filter: drop-shadow(0 6px 15px rgba(0, 0, 0, 0.4));
+}
+
+.achievement-description {
+    padding: 20px;
+}
+
+.achievement-description h3 {
+    color: #2196F3;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.achievement-description p {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    font-weight: 600;
+}
+
+/* Modal Styles */
+.achievement-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: modalFadeIn 0.4s ease;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    animation: backdropBlur 0.4s ease;
+    z-index: 1;
+}
+
+@keyframes backdropBlur {
+    from {
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+        background: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        background: rgba(0, 0, 0, 0.85);
+    }
+}
+
+.modal-content-wrapper {
+    position: relative;
+    max-width: 95vw;
+    max-height: 95vh;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    animation: modalSlideIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: scale(0.8) translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.95);
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    color: #333;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close:hover {
+    background: #007bff;
+    color: #fff;
+    transform: rotate(90deg) scale(1.1);
+}
+
+.zoom-controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 15px;
+    border-radius: 30px;
+    z-index: 100;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.zoom-controls button {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.zoom-controls button:hover:not(:disabled) {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+.zoom-controls button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.zoom-level {
+    font-size: 14px;
+    font-weight: 600;
+    color: #003d82;
+    min-width: 50px;
+    text-align: center;
+}
+
+.modal-media-container {
+    width: 100%;
+    max-height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.zoomable-image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.modal-image {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+}
+
+.modal-video {
+    width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+    display: block;
+    background: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .achievement-item {
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .achievement-description h3 {
+        font-size: 24px;
+    }
+
+    .achievement-description p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .achievement-item {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .achievement-item.image-left .achievement-image-container,
+    .achievement-item.image-right .achievement-image-container {
+        order: 1;
+    }
+
+    .achievement-item.image-left .achievement-description,
+    .achievement-item.image-right .achievement-description {
+        order: 2;
+    }
+
+    .achievement-image-container {
+        height: 350px;
+    }
+
+    .achievement-description h3 {
+        font-size: 22px;
+    }
+
+    .achievement-description p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .achievements-gallery-section {
+        padding: 60px 0;
+    }
+
+    .achievement-item {
+        margin-bottom: 40px;
+    }
+
+    .achievement-image-container {
+        height: 300px;
+    }
+
+    .achievement-description {
+        padding: 10px;
+    }
+
+    .achievement-description h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .achievement-description p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .modal-close {
+        width: 40px;
+        height: 40px;
+        font-size: 28px;
+        top: 15px;
+        right: 15px;
+    }
+
+    .zoom-controls {
+        top: 15px;
+        left: 15px;
+        padding: 8px 12px;
+    }
+
+    .zoom-controls button {
+        width: 32px;
+        height: 32px;
+    }
+
+    .zoom-level {
+        font-size: 12px;
+        min-width: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .achievements-gallery-section {
+        padding: 40px 0;
+    }
+
+    .achievement-item {
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+
+    .achievement-image-container {
+        height: 250px;
+    }
+
+    .achievement-description h3 {
+        font-size: 18px;
+    }
+
+    .achievement-description p {
+        font-size: 13px;
+    }
+
+    .modal-content-wrapper {
+        max-width: 98vw;
+        border-radius: 15px;
+    }
+
+    .zoom-controls {
+        padding: 6px 10px;
+        gap: 8px;
+    }
+
+    .zoom-controls button {
+        width: 28px;
+        height: 28px;
+    }
+
+    .zoom-controls button svg {
+        width: 18px;
+        height: 18px;
+    }
+}
